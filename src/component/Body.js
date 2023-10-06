@@ -27,10 +27,10 @@ const Body = () => {
         data-aos="zoom-in"
         data-aos-delay="100"
       >
-        <p className=" text-[#FFFFFF] font-Roboto  lg:text-xl lg:ml-[800px] ml-[129px] text-sm font-bold lg:mt-[400px] mt-[92px] ">
+        <p className=" text-[#FFFFFF] font-Roboto  lg:text-xl lg:ml-[90px] 2xl:ml-[800px] ml-[129px] text-sm font-bold lg:mt-[400px] mt-[92px] ">
           ST MICHAEL’S SCHOOL
         </p>
-        <div className="ml-[63px] lg:ml-[700px] ">
+        <div className="ml-[63px] 2xl:ml-[700px] lg:ml-[150px] ">
           <p className="lg:text-5xl text-base text-[#FFFFFF] lg:mt-[16px] mt-[7px] font-Roboto font-extrabold">
             Nurturing{" "}
             <span className="lg:text-5xl text-base   text-[#FFA901]  font-Roboto font-font-bold lg:leading-10">

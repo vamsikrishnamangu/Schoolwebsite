@@ -3,11 +3,12 @@ import React from "react";
 const Meet = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row w-full lg:mt-20 mt-[20px]">
-        <h1 className="ml-[40px] font-bold text-lg text-[#000] lg:hidden">
+      <div>
+        <h1 className="ml-[40px] mt-[20px] font-bold text-lg text-[#000] lg:hidden">
           Apply for Admission
         </h1>
-
+      </div>
+      <div className="flex flex-col lg:flex-row ">
         <div
           className="lg:w-2/3 lg:h-[672px] w-full h-[210px] bg-cover mt-4 lg:mt-0"
           style={{ backgroundImage: "url(footer.png)" }}
