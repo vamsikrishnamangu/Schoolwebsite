@@ -17,7 +17,7 @@ const Life = () => {
           Life at St. Michael’s
         </h1>
       </div>
-      <div className=" lg:ml-[84px] ml-[24px] flex flex-col sm:flex-row lg:justify-around">
+      <div className=" lg:ml-[84px] ml-[24px] flex flex-col sm:flex-row 2xl:justify-around lg:justify-center lg:gap-[32px]">
         {/* content */}
         <div
           className={`py-6 px-5 ${

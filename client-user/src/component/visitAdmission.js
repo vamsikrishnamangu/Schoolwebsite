@@ -10,7 +10,7 @@ const VisitAdmission = () => {
           </h1>
         </div>
         <div className="lg:space-x-6 lg:flex lg:flex-row lg:mt-[63px] mt-[20px] ml-[16px]  mr-[17px] lg:mr[60px]">
-          <div className="lg:h-[500px] lg:w-[750px] lg:ml-[194px]  relative">
+          <div className=" lg:h-[500px] lg:w-[750px] lg:ml-[194px]  relative">
             {" "}
             {/* Added relative class */}
             <img src="/image.png" alt="images" className="w-full h-full" />

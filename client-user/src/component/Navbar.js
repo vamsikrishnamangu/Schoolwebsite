@@ -75,7 +75,7 @@ const Navbar = () => {
               <div className="bg-[#1A2338] rounded-lg p-4 relative w-full sm:w-[390px] lg:w-[1280px]  xl:w-[1280px] 2xl:w-[1440px] h-[1520px] lg:h-[800px] font-bold text-xl ">
                 {/* Close Button */}
                 <HiX
-                  className="cursor-pointer text-[#fff] absolute top-2 right-2"
+                  className="cursor-pointer text-[#fff] absolute sm:top-2 sm:right-2 top-[10px] right-[10px] z-50"
                   size={24}
                   onClick={() => setShowPopup(false)}
                 />
@@ -83,11 +83,11 @@ const Navbar = () => {
                 <img
                   src="/logo.png"
                   alt="logo"
-                  className="lg:mt-[64px] mt-[84px]"
+                  className="lg:mt-[64px] mt-[80px]"
                 />
 
                 {/* Navigation Items */}
-                <div className="flex flex-col lg:flex-row space-y-4 lg:space-x-[154px] lg:space-y-0">
+                <div className="flex flex-col lg:flex-row space-y-4 lg:space-x-[140px] lg:space-y-0">
                   <div>
                     <Link
                       to="/"
@@ -96,13 +96,13 @@ const Navbar = () => {
                       Home page
                     </Link>
                     <Link
-                      to="/activities"
+                      to="/about"
                       className="block px-4 py-2 text-[#6E99FF]"
                     >
                       Governance & Leadership
                     </Link>
                     <Link
-                      to="/about"
+                      to="/activities"
                       className="block px-4 py-2 text-[#6E99FF]"
                     >
                       Life at St. Michael’s
@@ -194,8 +194,19 @@ const Navbar = () => {
                     <Link to="/" className="block px-4 py-2 text-[#6E99FF]">
                       Our school
                     </Link>
-                    <img src="/image 25.png" alt="logo" className="space-x-4" />
-                    <img src="/image 26.png" alt="logo" className="mt-[17px]" />
+                    {/* Wrap images in flex container */}
+                    <div className="flex lg:flex-col ml-[2px] gap-[4px] mt-4">
+                      <img
+                        src="/image 25.png"
+                        alt="logo"
+                        className="lg:w-[237px] lg:h-[150px] w-[140px] h-[88px] "
+                      />
+                      <img
+                        src="/image 26.png"
+                        alt="logo"
+                        className="lg:w-[237px] lg:h-[150px] w-[139px] h-[87px] "
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

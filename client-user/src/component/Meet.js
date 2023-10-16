@@ -10,11 +10,11 @@ const Meet = () => {
       </div>
       <div className="flex flex-col lg:flex-row ">
         <div
-          className="lg:w-2/3 lg:h-[672px] w-full h-[210px] bg-cover mt-4 lg:mt-0"
+          className="lg:w-[845px] 2xl:w-2/3 lg:h-[672px] w-full h-[210px] bg-cover mt-4 lg:mt-0"
           style={{ backgroundImage: "url(footer.png)" }}
         ></div>
 
-        <div className="lg:w-1/2 lg:h-[672px] w-[375px] h-[310px] bg-[#1A2338]  lg:mt-0">
+        <div className="lg:w-[723px] 2xl:w-1/2 lg:h-[672px] w-[375px] h-[310px] bg-[#1A2338]  lg:mt-0">
           <h1
             className="ml-16 mt-24 font-bold text-4xl text-[#fff] hidden lg:block"
             style={{ lineHeight: "78.33px" }}

@@ -43,17 +43,17 @@ const Guiding = () => {
             <img
               src="/image6.png"
               alt="Images"
-              className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
+              className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] lg:mt-0 mt-[23px]"
             />
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row-reverse justify-between items-center mt-8">
-          <div className="flex flex-col lg:ml-[79px] ml-[25px] ">
-            <h1 className="lg:mt-[115px] mt-[24px] text-[#1A2338] font-Roboto font-bold lg:text-3xl text-xl">
+          <div className="flex flex-col  ml-[25px] ">
+            <h1 className="lg:mt-[105px] mt-[24px] text-[#1A2338] font-Roboto font-bold lg:text-3xl text-xl">
               Unique Teaching Methodology
             </h1>
-            <p className="lg:mt-[30px] mt-[17px] font-Roboto font-normal lg:text-lg text-xs text-black">
+            <p className="lg:mt-[30px] mt-[17px] lg:w-[402px] lg:h-[58px] font-Roboto font-normal lg:text-lg text-xs text-black">
               Lorem ipsum dolor sit amen porta
             </p>
             <p className="lg:mt-[30px] mt-[17px] font-Roboto font-normal lg:text-lg text-xs text-black">
@@ -67,11 +67,11 @@ const Guiding = () => {
             </div> */}
           </div>
 
-          <div className="flex-shrink-0 lg:mr-[79px]">
+          <div className="flex-shrink-0 lg:ml-[79px]">
             <img
               src="/image6.png"
               alt="Images"
-              className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
+              className="lg:w-[634px] 2xl:ml-[20px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] lg:mt-0 mt-[23px]"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const Guiding = () => {
             <img
               src="/image6.png"
               alt="Images"
-              className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
+              className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] mt-[23px] lg:mt-0"
             />
           </div>
         </div>

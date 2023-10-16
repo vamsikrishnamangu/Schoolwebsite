@@ -95,7 +95,7 @@ const Beyondactivity = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#fff] lg:mt-14  lg:ml-[64px] ml-[55px]">
+      <div className="bg-[#fff] lg:mt-14 2xl:ml-[890px]  lg:ml-[510px] ml-[55px]">
         <h1 className="items-center lg:mt-[109px] mt-[43px] text-[#1A2338] font-Roboto text-3xl font-bold">
           Future-Ready Infra
         </h1>

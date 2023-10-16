@@ -16,15 +16,15 @@ const NewsAndEvents = () => {
     autoplaySpeed: 5000, // Slide every 5 seconds
   };
   const renderSlide = (imgSrc, altText) => (
-    <div className="bg-[#1A2338] rounded-md  ">
+    <div className="bg-[#1A2338] rounded-md ">
       <div className="pt-[29px] pl-[84px]">
         <h1 className="lg:text-4xl text-xl ml-[20px] lg:ml-[84px] text-white font-bold font-Roboto sm:items-center">
           News and Events
         </h1>
       </div>
       <div className="flex flex-row  ">
-        <div className="flex flex-col lg:flex-row rounded-md shadow-lg gap-5">
-          <div className="w-[293px] h-[220px] mt-[29px] lg:ml-[84px] ml-[20px]">
+        <div className="flex flex-col lg:flex-row rounded-md shadow-lg gap-4">
+          <div className="w-[293px] h-[220px] mt-[29px]  2xl:ml-[84px] lg:ml-[34px] ml-[20px]">
             <img src="/image1.png" alt="image1" />
           </div>
           <div className="lg:mt-[29px] ml-[20px] rounded-lg border lg:border-none border-solid pl-[18px]  border-white">
@@ -45,7 +45,7 @@ const NewsAndEvents = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row rounded-md shadow-lg gap-5">
+        <div className="flex flex-col lg:flex-row rounded-md shadow-lg ">
           <div className="w-[293px] h-[220px] mt-[29px] lg:ml-[84px] ml-[20px]">
             <img src="/image2.png" alt="image2" />
           </div>
