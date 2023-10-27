@@ -45,7 +45,7 @@ const Admission = () => {
               sx={{ width: "642px", height: "56px" }}
             />
           </Box>
-          <div className=" 2xl:ml-[531px] ">
+          <div className=" 2xl:ml-[531px] lg:ml-[490px] ">
             <SaveButton />
           </div>
         </div>

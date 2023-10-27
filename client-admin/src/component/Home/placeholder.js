@@ -53,7 +53,7 @@ const Placeholder = () => {
                 </div>
               </div>
 
-              <div className="lg:ml-[450px]  ">
+              <div className="lg:ml-[450px] space-x-4  ">
                 <Button
                   variant="outlined"
                   style={{

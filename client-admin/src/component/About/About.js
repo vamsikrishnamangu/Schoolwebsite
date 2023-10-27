@@ -13,8 +13,9 @@ const About = () => {
           >
             About Us
           </h1>
-
-          <Publish />
+          <div className="lg:ml-[40px]">
+            <Publish />
+          </div>
         </div>
         <div className=" flex flex-col  2xl:w-[656px] 2xl:h-[453px] lg:w-[600px] lg:h-[400px] rounded-3xl 2xl:mt-[34px] lg:mt-[24px] bg-[#FFFFFF] 2xl:ml-[90px] lg:ml-[50px] mr-[32px] relative">
           <h1 className="mb-[13px] ml-[30px] pt-[26px] font-bold text-sm text-left text-[#1A233899]">

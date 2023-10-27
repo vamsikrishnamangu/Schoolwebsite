@@ -20,9 +20,9 @@ const Contact = () => {
   };
   const handleSave = () => {
     // Save logic can be added here
+    console.log(handleSave, "saved");
     setEmail("");
     setReEnterEmail("");
-    console.log(handleSave, "saved");
   };
 
   return (

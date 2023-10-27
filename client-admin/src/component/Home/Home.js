@@ -19,7 +19,7 @@ const Home = () => {
             pop-up
           </p>
         </div>
-        <div className="2xl:ml-[300px] lg:ml-[200px]">
+        <div className="2xl:ml-[300px] lg:ml-[130px] ">
           <Publish />
         </div>
       </div>
