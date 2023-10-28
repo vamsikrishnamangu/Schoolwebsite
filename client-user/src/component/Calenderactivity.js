@@ -13,7 +13,7 @@ const Calendaractivity = () => {
           {/* Image */}
           <div className="lg:ml-[308px] ml-[20px] lg:mr-[43px] mr-[60px] relative -top-16">
             <img
-              src="/image3.png"
+              src="/image3.svg"
               alt="images"
               className="lg:w-[370px] lg:h-[279px] w-[295px] h-[224px] flex-shrink-0"
             />
@@ -41,7 +41,7 @@ const Calendaractivity = () => {
           {/* Image */}
           <div className="lg:ml-[308px] ml-[20px] lg:mr-[43px] mr-[60px] relative -top-16">
             <img
-              src="/image3.png"
+              src="/image4.svg"
               alt="images"
               className="lg:w-[370px] lg:h-[279px] w-[295px] h-[224px] flex-shrink-0"
             />

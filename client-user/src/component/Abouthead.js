@@ -6,7 +6,7 @@ const Abouthead = () => {
       <div>
         <div className="relative w-full">
           <img
-            src="/image.png"
+            src="/Aboutimage.svg"
             alt="images"
             className="lg:w-full lg:h-1/2 w-[453px] h-[222px]"
           />

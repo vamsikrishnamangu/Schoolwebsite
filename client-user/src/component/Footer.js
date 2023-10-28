@@ -12,7 +12,7 @@ const Footer = () => {
       <div className=" hidden lg:inline-flex  flex-row space-x-10 2xl:space-x-40  lg:grid-cols-5 gap-8 px-6 py-16">
         <div>
           <div className="lg:flex justify-center ml-[84px] mt-[96px]">
-            <img src="/logo.png" alt="logo" className="w-[150px] h-[127px] " />
+            <img src="/logo.svg" alt="logo" className="w-[150px] h-[127px] " />
           </div>
         </div>
         <div className="ml-[169px] mt-[111px]">
@@ -54,7 +54,7 @@ const Footer = () => {
         <div>
           <div className="flex flex-row">
             <div className="w-[156px]  space-x-36 h-[131px] mt-[53px] ml-[20px] ">
-              <img src="/logo.png" alt="logo" />
+              <img src="/logo.svg" alt="logo" />
             </div>
             <div>
               <h4 className="text-white font-normal text-sm">Contact Us</h4>

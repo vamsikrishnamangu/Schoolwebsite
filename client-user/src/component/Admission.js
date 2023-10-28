@@ -69,7 +69,7 @@ const Admission = () => {
         <div className="bg-[#fff] w-full">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:ml-[137px] ml-[24px] mt-[26px] lg:mt-[101px]  lg:h-1/2 lg:w-1/2 w-[330px] h-[320px]">
-              <img src="image3.png" alt="images" />
+              <img src="admissionImage1.svg" alt="images" />
             </div>
             <div>
               <h1 className=" lg:mt-[152px] lg:ml-[116px] ml-[24px] text-[#1A2338] font-Roboto lg:text-4xl text-lg font-bold ">

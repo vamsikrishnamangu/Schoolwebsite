@@ -12,7 +12,7 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <img
-              src="/logo.png"
+              src="/logo.svg"
               alt="logo"
               className="w-[48px] h-[40px] lg:w-[122px] lg:h-[104px] "
             />
@@ -81,7 +81,7 @@ const Navbar = () => {
                 />
 
                 <img
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="logo"
                   className="lg:mt-[64px] mt-[80px]"
                 />

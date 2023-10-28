@@ -25,14 +25,14 @@ const Campus = () => {
       {/* Mobile layout with react-slick carousel */}
       <div className="lg:ml-[84px] ml-[10px] lg:hidden">
         <Slider {...settings}>
-          {["image3.png", "image4.png"].map((image, index) => (
+          {["image3.svg", "image4.svg"].map((image, index) => (
             <div className="relative w-[300px] h-[271px]">
               <div
                 className=" ml-[24px] bg-cover bg-center w-[300px] h-[271px] flex items-center justify-center"
                 style={{ backgroundImage: `url(${image})` }}
               >
                 <img
-                  src={`/campus${index + 4}.png`}
+                  src={`/campus${index + 4}.svg`}
                   alt={`campus${index + 4}`}
                 />
               </div>
@@ -57,7 +57,7 @@ const Campus = () => {
 
       {/* The existing layout for desktop screens */}
       <div className="hidden lg:flex ml-[84px] lg:justify-around flex flex-row gap-14 mt-10">
-        {["image3.png", "image4.png"].map((image, index) => (
+        {["image3.svg", "image4.svg"].map((image, index) => (
           <div className="relative w-[606px] h-[455px]">
             <div
               className="absolute w-full h-full bg-cover bg-center flex items-center justify-center"

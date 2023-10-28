@@ -19,7 +19,7 @@ const Newsletter = () => {
       <div className="lg:ml-[84px]">
         <div className="lg:w-[406px] lg:h-[228px]  w-[336px] h-[240px]  ml-[46px]">
           {" "}
-          <img src="/image6.png" alt="images" />
+          <img src="/image4.svg" alt="images" />
         </div>
         <div className=" mb-[23px] relative bg-[#1A2338] lg:w-[407px] w-[335px] h-[304px] ml-[46px] p-[33px]  flex flex-col items-start">
           {/* Image */}

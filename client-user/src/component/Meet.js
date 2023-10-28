@@ -10,8 +10,8 @@ const Meet = () => {
       </div>
       <div className="flex flex-col lg:flex-row ">
         <div
-          className="lg:w-[845px] 2xl:w-2/3 lg:h-[672px] w-full h-[210px] bg-cover mt-4 lg:mt-0"
-          style={{ backgroundImage: "url(footer.png)" }}
+          className="lg:w-[855px] 2xl:w-2/3 lg:h-[672px] w-full h-[210px] bg-cover mt-4 lg:mt-0"
+          style={{ backgroundImage: "url(meetImage.svg)" }}
         ></div>
 
         <div className="lg:w-[723px] 2xl:w-1/2 lg:h-[672px] w-[375px] h-[310px] bg-[#1A2338]  lg:mt-0">

@@ -5,7 +5,7 @@ const Headcontact = () => {
     <div>
       <div className="relative w-full">
         <img
-          src="image.png"
+          src="contactImage.svg"
           alt="images"
           className="lg:w-full lg:h-1/2 w-[453px] h-[222px] ml-[20px]"
         />

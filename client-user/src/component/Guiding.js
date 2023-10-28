@@ -3,12 +3,45 @@ import React from "react";
 const Guiding = () => {
   return (
     <div>
-      <div className="relative lg:w-full lg:h-[227px] w-[390px] h-[116px] bg-[#1A2338] flex items-center justify-center">
+      <div className="relative  bg-[#1A2338] flex items-center justify-center">
         <p
           className="text-[#FFF] font-Inter italic font-normal text-2xl"
           style={{ lineHeight: "128%" }}
         >
-          “Our vision..................................”
+          Our core values include: Excellence: We relentlessly pursue excellence
+          in all aspects of education, challenging our students to reach their
+          full potential academically, creatively, and ethically.
+          <br />
+           Innovation: We embrace innovation as a cornerstone of education. Our
+          students are encouraged to think critically, solve problems, and adapt
+          to the ever-evolving digital landscape.
+          <br />
+           Integrity: We instill in our students the importance of honesty,
+          respect, and ethical behavior, ensuring they become responsible and
+          principled leaders.
+          <br />
+           Community: We foster a sense of belonging and interconnectedness
+          among students, parents, and the wider community. Together, we create
+          a supportive and inclusive environment.
+          <br />
+           Collaboration: We promote collaboration and partnerships with
+          industry leaders, educational experts, and the community to provide
+          students with real-world insights and mentorship opportunities.
+          <br />
+           Empowerment: We empower our educators through continuous professional
+          development, enabling them to employ innovative teaching methods and
+          stay at the forefront of educational practices.
+          <br />
+           Our mission is to guide students at St. Michael's School to become
+          confident, adaptable, and purpose-driven individuals. By blending
+          practical education with these core values, we equip our students to
+          excel in an ever-changing world and to make a positive impact on
+          society.
+          <br />
+           At St. Michael's School, we are not merely educators; we are mentors,
+          guides, and champions of holistic development. Our mission is to
+          illuminate the path to success for each student, inspiring them to
+          become responsible, innovative, and compassionate global citizens."
         </p>
       </div>
       <div className="bg-[#fff] lg:mt-[54px] lg:ml-[84px] hidden lg:block">
@@ -41,7 +74,7 @@ const Guiding = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/aboutImage1.svg"
               alt="Images"
               className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] lg:mt-0 mt-[23px]"
             />
@@ -69,7 +102,7 @@ const Guiding = () => {
 
           <div className="flex-shrink-0 lg:ml-[79px]">
             <img
-              src="/image6.png"
+              src="/aboutImage2.svg"
               alt="Images"
               className="lg:w-[634px] 2xl:ml-[20px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] lg:mt-0 mt-[23px]"
             />
@@ -96,7 +129,7 @@ const Guiding = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/aboutImage3.svg"
               alt="Images"
               className="lg:w-[634px] lg:h-[450px] w-[390px] h-[231px] mt-[23px] lg:mt-0"
             />

@@ -14,7 +14,7 @@ const Classroom = () => {
             <img
               className="lg:h-64 lg:w-64 w-[199px] h-[199px] "
               style={{ borderRadius: "199px" }}
-              src="/Ellipse1.png"
+              src="/Ellipse 1.png"
               alt="Ellipse"
             />
           </div>
@@ -43,7 +43,7 @@ const Classroom = () => {
         <div className="flex flex-col items-center  py-[12px] px-[2px]">
           <img
             className="lg:h-64 lg:w-64 w-[199px] h-[199px] ml-[64px] "
-            src="/Ellipse2.png"
+            src="/Ellipse 2.png"
             alt="Ellipse"
           />
           <div className="flex flex-row gap-3.5  mt-7 ">
@@ -62,7 +62,7 @@ const Classroom = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <img className="h-64 w-64" src="/Ellipse3.png" alt="Ellipse" />
+          <img className="h-64 w-64" src="/Ellipse 3.png" alt="Ellipse" />
           <div className="flex flex-row gap-3.5  mt-7">
             <div className="flex gap-4">
               <img className="h-11 w-11" src="/Group8.png" alt="power" />

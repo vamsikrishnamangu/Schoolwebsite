@@ -33,7 +33,7 @@ const Beyondactivity = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/activity1.svg"
               alt="Images"
               className="lg:w-[634px] lg:h-[450px] w-[590px] h-[231px] mt-[23px]"
             />
@@ -61,7 +61,7 @@ const Beyondactivity = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/activity2.svg"
               alt="Images"
               className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
             />
@@ -88,7 +88,7 @@ const Beyondactivity = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/activity3.svg"
               alt="Images"
               className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
             />
@@ -125,7 +125,7 @@ const Beyondactivity = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/activity4.svg"
               alt="Images"
               className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
             />
@@ -153,7 +153,7 @@ const Beyondactivity = () => {
 
           <div className="flex-shrink-0 lg:mr-[79px]">
             <img
-              src="/image6.png"
+              src="/activity5.svg"
               alt="Images"
               className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
             />
@@ -179,11 +179,11 @@ const Beyondactivity = () => {
           </div>
 
           <div className="flex-shrink-0 lg:mr-[79px]">
-            <img
-              src="/image6.png"
+            {/* <img
+              src="/activity6.svg"
               alt="Images"
               className="lg:w-[634px] lg:ml-[84px] lg:h-[450px] w-[390px] h-[231px] mt-[23px]"
-            />
+            /> */}
           </div>
         </div>
       </div>

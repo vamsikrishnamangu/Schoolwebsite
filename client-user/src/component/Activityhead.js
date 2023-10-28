@@ -9,7 +9,7 @@ const Activityehead = () => {
       {/* Original Image */}
       <div className="relative w-full" onClick={() => setModalOpen(true)}>
         <img
-          src="/image.png"
+          src="/ActivityImage.svg"
           alt="images"
           className="lg:w-full lg:h-1/2 w-[453px] h-[222px]"
         />
