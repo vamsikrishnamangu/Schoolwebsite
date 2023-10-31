@@ -3,28 +3,58 @@ import React from "react";
 const Address = () => {
   return (
     <div>
-      <div className="bg-[#fff] flex flex-col lg:flex-row mt-8">
-        <div className="flex-1 lg:ml-[24px] ml-[24px]  p-4 ">
-          <h1 className="text-[#1A2338] font-Roboto lg:text-4xl md:text-lg font-bold">
-            OUR ADDRESS
-          </h1>
-          <p className="mt-[13px] lg:mt-[20px] font-Roboto font-normal text-lg text-black">
+      <div className="flex-1 lg:ml-[5rem] ml-[24px]  p-4 ">
+        <h1 className="lg:ml-[5rem] lg:mt-[2rem] text-[#1A2338] font-Roboto lg:text-4xl md:text-lg font-bold">
+          OUR ADDRESS
+        </h1>
+      </div>
+      <div className=" lg:ml-[5rem] bg-[#fff] flex flex-row lg:flex-row mt-4">
+        <div className="flex flex-col ml-[5rem]">
+          <p className="mt-[13px] lg:mt-[4rem] font-Roboto font-bold text-2xl text-[#1A2338]">
+            Suchitra Campus: Playschool and <br /> Nursery to Grade 5
+          </p>
+          <p className="font-Roboto  mt-2 lg:mt-[10px] font-bold text-xl text-[#727272]">
             Customer Care No: <br />
-            <span className="font-bold text-black">8886911466 </span>
+            <span className="text-[#727272] text-normal">040 2786 2624</span>
           </p>
-          <p className="font-Roboto  mt-2 lg:mt-[10px] font-normal text-xl text-black">
-            9W63+X96, Adhalia, nearby Niali Road, Phulnakhara, Odisha 754001
-          </p>
-          <p className="font-Roboto mt-2 lg:mt-[10px] font-normal text-lg text-black">
-            Lorem ipsum dolor sit amet consectetur. Consectetur mi vestibulum
-            nunc posuere id sapien porta purus. Lorem ipsum dolor sit amet
-            consectetur. Consectetur mi vestibulum nunc posu...
+          <p className="font-Roboto mt-2   font-normal text-xl text-[#727272]">
+            Phase 1, 141 6-105/1, 141, Quthbullapur Main Rd, Godavari Homes,
+            <br />
+            Quthbullapur, Hyderabad, Telangana 500067
           </p>
         </div>
         <div className="flex-1 p-4">
           {/* Embed your map here */}
-          <div className="lg:w-[521px] xl:w-full  lg:h-[500px] w-[336px] h-[330px] bg-gray-300">
-            <img src="/map.png" alt="Map" className="w-full h-full" />
+          <div className="lg:w-[621px]   lg:h-[281px] w-[336px] h-[330px] rounded-md ">
+            <img
+              src="/map1.svg"
+              alt="Map"
+              className="w-full h-full lg:ml-[16rem]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className=" lg:ml-[5rem] bg-[#fff] flex flex-row lg:flex-row mt-4">
+        <div className="flex flex-col ml-[5rem]">
+          <p className="mt-[13px] lg:mt-[9rem] font-Roboto font-bold text-2xl text-[#1A2338]">
+            Marredpally Campus: Playschool and <br />
+            Nursery to Grade 5
+          </p>
+          <p className="font-Roboto  mt-2 lg:mt-[10px] font-bold text-xl text-[#727272]">
+            Customer Care No: <br />
+            <span className="text-[#727272] text-normal">
+              040-27717682 , 040-66497682
+            </span>
+          </p>
+          <p className="font-Roboto mt-2   font-normal text-xl text-[#727272]">
+            10-2-202 Street No. 5, , West Marredpally, Hyderabad - 500026
+          </p>
+        </div>
+        <div className="flex-1 p-4">
+          {/* Embed your map here */}
+          <div className="lg:w-[621px]   lg:h-[281px] w-[336px] h-[330px] rounded-md lg:mt-[9rem] lg:ml-[18rem] ">
+            <img src="/map2.svg" alt="Map" className="w-full h-full" />
           </div>
         </div>
       </div>

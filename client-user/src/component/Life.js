@@ -1,28 +1,31 @@
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 const Life = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  useEffect(() => {
-    AOS.init({
-      // You can also add some settings here if needed
-      duration: 1000, // Animation duration in milliseconds
-    });
-  }, []);
+  const [expandedSection, setExpandedSection] = useState(null);
+
+  const toggleExpand = (section) => {
+    if (expandedSection === section) {
+      setExpandedSection(null); // Collapse the section if it's already expanded
+    } else {
+      setExpandedSection(section); // Expand the new section
+    }
+  };
+
   return (
     <>
-      <div className="ml-[84px] lg:mt-[24px] mt-[30px]">
-        <h1 className="lg:ml-[112px] font-Roboto font-bold lg:text-4xl text-2xl ">
+      <div className="ml-[70px] lg:mt-[24px] mt-[30px]">
+        <h1 className="lg:ml-[106px] font-Roboto font-bold lg:text-4xl text-2xl ">
           Life at St. Michael’s
         </h1>
       </div>
-      <div className=" lg:ml-[84px] ml-[24px] flex flex-col sm:flex-row 2xl:justify-around lg:justify-center lg:gap-[32px]">
+      <div className=" lg:ml-[4px] ml-[24px] flex flex-col sm:flex-row 2xl:justify-around lg:justify-center lg:gap-[32px]">
         {/* content */}
         <div
           className={`py-6 px-5 ${
-            isExpanded ? "w-[400px]" : "w-72"
-          } h-96 mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150`}
+            expandedSection === "section1" ? "w-[400px]" : "w-72"
+          } h-96 mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition-all duration-500 ease-in-out`}
         >
           {/* Image */}
           <img src="/Group3.png" alt="Group3" className="w-20 h-20 mb-3" />
@@ -34,23 +37,29 @@ const Life = () => {
           {/* Description */}
           <p
             className={`text-sm mb-3 ${
-              isExpanded ? "w-full" : "w-4/5"
+              expandedSection === "section1" ? "w-full" : "w-4/5"
             } text-left`}
           >
-            Lorem ipsum dolor sit amet consectetur. Aenean amet quam auctor
-            neque pellentes Ullamcorper orci felis ucerat ac vulputate.
-            {isExpanded && " Additional text that appears when expanded."}
+            Our school champions a holistic education rooted in experiential
+            learning, fostering intellectual, emotional, and social growth
+            {expandedSection === "section1" &&
+              " Additional text that appears when expanded."}
           </p>
 
           {/* Learn More Button */}
           <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="font-medium text-center leading-4 text-base bg-white py-3 lg:mb-4 px-5 rounded-lg text-[#1A2338] mt-auto"
+            onClick={() => toggleExpand("section1")}
+            className="font-medium text-center leading-4 text-base bg-white py-[12px] lg:mb-4 px-[20px] rounded-lg text-[#1A2338] mt-auto"
           >
-            {isExpanded ? "Read Less" : "Learn More"}
+            {expandedSection === "section1" ? "Close" : "Learn More"}
           </button>
         </div>
-        <div className="  py-6 px-5 w-72 h-96 mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150">
+
+        <div
+          className={`py-6 px-5 ${
+            expandedSection === "section2" ? "w-[400px] h-[400px]" : "w-72 h-96"
+          } mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition-all duration-500 ease-in-out`}
+        >
           {/* Image */}
           <img src="/Group4.png" alt="Group3" className="w-20 h-20 mb-3" />
 
@@ -61,17 +70,30 @@ const Life = () => {
           <div className="w-60  border border-1px border-white bg-white"></div>
 
           {/* Description */}
-          <p className="text-sm mb-3 w-4/5 text-left">
-            Lorem ipsum dolor sit amet consectetur. Aenean amet quam auctor
-            neque pellentes Ullamcorper orci felis ucerat ac vulputate.
+          <p
+            className={`text-sm mb-3 ${
+              expandedSection === "section2" ? "w-full" : "w-4/5"
+            } text-left`}
+          >
+            Our "Think, Say, and Do" methodology melds cognitive development,
+            effective communication, and hands-on learning to
+            {expandedSection === "section2" &&
+              " Additional text that appears when expanded."}
           </p>
 
           {/* Learn More Button */}
-          <button className="font-medium text-center leading-4 text-base bg-white py-3 mb-4 px-5 rounded-lg text-[#1A2338] mt-auto">
-            Learn More
+          <button
+            onClick={() => toggleExpand("section2")}
+            className="font-medium text-center leading-4 text-base bg-white py-[12px] lg:mb-4 px-[20px] rounded-lg text-[#1A2338] mt-auto"
+          >
+            {expandedSection === "section2" ? "Close" : "Learn More"}
           </button>
         </div>
-        <div className="py-6 px-5 w-72 h-96 mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150">
+        <div
+          className={`py-6 px-5 ${
+            expandedSection === "section3" ? "w-[400px] h-[400px]" : "w-72 h-96"
+          } mt-[17px] ml-[24px] rounded-2xl bg-[#1A2338] text-white flex flex-col items-center gap-2.5 transition-all duration-500 ease-in-out`}
+        >
           {/* Image */}
           <img src="/Group5.png" alt="Group3" className="w-15 h-15 mb-3" />
 
@@ -80,14 +102,23 @@ const Life = () => {
           <div className="w-60 border border-1px border-white bg-white"></div>
 
           {/* Description */}
-          <p className="text-sm mb-3 w-4/5 text-left">
-            Lorem ipsum dolor sit amet consectetur. Aenean amet quam auctor
-            neque pellentes Ullamcorper orci felis ucerat ac vulputate.
+          <p
+            className={`text-sm mb-3 ${
+              expandedSection === "section3" ? "w-full" : "w-4/5"
+            } text-left`}
+          >
+            Our Inclusive Education model celebrates diversity and individual
+            strengths, employing a personalized, multi-disciplinary approach
+            {expandedSection === "section3" &&
+              " Additional text that appears when expanded."}
           </p>
 
           {/* Learn More Button */}
-          <button className="font-medium text-center leading-4 text-base bg-white py-3 mb-4 px-5 rounded-lg text-[#1A2338] mt-auto">
-            Learn More
+          <button
+            onClick={() => toggleExpand("section3")}
+            className="font-medium text-center leading-4 text-base bg-white py-[12px] lg:mb-4 px-[20px] rounded-lg text-[#1A2338] mt-auto"
+          >
+            {expandedSection === "section3" ? "Close" : "Learn More"}
           </button>
         </div>
       </div>

@@ -11,13 +11,13 @@ const Footer = () => {
     >
       <div className=" hidden lg:inline-flex  flex-row space-x-10 2xl:space-x-40  lg:grid-cols-5 gap-8 px-6 py-16">
         <div>
-          <div className="lg:flex justify-center ml-[84px] mt-[96px]">
-            <img src="/logo.svg" alt="logo" className="w-[150px] h-[127px] " />
+          <div className="lg:flex justify-center ml-[84px] ">
+            <img src="/logo.svg" alt="logo" className="w-[301px] h-[301px] " />
           </div>
         </div>
         <div className="ml-[169px] mt-[111px]">
           <h4 className="text-white font-normal ">Links</h4>
-          <ul className="leading-8 text-[#fff]  mt-[25px] font-normal text-sm font-Lato">
+          <ul className="leading-8 text-[#fff]  lg:mt-[25px] font-normal text-sm font-Lato">
             <li>Home</li>
             <li>Admissions</li>
             <li>Digital Classrooms</li>
@@ -27,11 +27,11 @@ const Footer = () => {
         <div className="ml-[ 68px] mt-[111px]">
           <h4 className="text-white font-normal mb-4">Contact Us</h4>
           <ul className="leading-8 text-[#fff] font-normal text-sm font-Lato">
-            <li>Phase 1, 141 6-105/1, 141,</li>
-            <li>Quthbullapur Main Rd,</li>
-            <li>Hyderabad,</li>
-            <li>Telangana 500067</li>
-            <li>Phone:04027862624</li>
+            <li>Suchitra Campus</li>
+            <li>Phone: 040 2786 2624</li>
+            <br />
+            <li>Marredpally Campus</li>
+            <li>Phone: 040 2786 2624</li>
           </ul>
         </div>
         <div className="ml-[ 68px] mt-[111px]">
@@ -59,11 +59,11 @@ const Footer = () => {
             <div>
               <h4 className="text-white font-normal text-sm">Contact Us</h4>
               <ul className="leading-8 text-[#fff] font-normal text-sm font-Lato">
-                <li>Phase 1, 141 6-105/1, 141,</li>
-                <li>Quthbullapur Main Rd,</li>
-                <li>Hyderabad,</li>
-                <li>Telangana 500067</li>
-                <li>Phone:04027862624</li>
+                <li>Suchitra Campus</li>
+                <li>Phone: 040 2786 2624</li>
+                <br />
+                <li>Marredpally Campus</li>
+                <li>Phone: 040 2786 2624</li>
               </ul>
             </div>
           </div>

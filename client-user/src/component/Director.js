@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 const Director = () => {
-  const [selectedTitle, setSelectedTitle] = useState(null);
+  const [selectedTitle, setSelectedTitle] = useState(
+    "Administrative Leadership"
+  );
 
   const handleTitleClick = (title) => {
     setSelectedTitle(selectedTitle === title ? null : title);
@@ -9,8 +11,8 @@ const Director = () => {
 
   return (
     <>
-      <div className=" mt-[20px] top-[2718px] left-[84px] w-full h-[112px] bg-[#2E416D] rounded-[3px] flex justify-between items-center px-6">
-        {["Director", "Administrative", "Leadership"].map((title) => (
+      <div className=" mt-[20px]  w-full h-[112px] bg-[#2E416D] rounded-[3px] flex justify-around items-center px-6">
+        {["Administrative Leadership", "Operating Leadership"].map((title) => (
           <div
             className="flex flex-col items-center space-y-2 cursor-pointer"
             onClick={() => handleTitleClick(title)}
@@ -43,87 +45,106 @@ const Director = () => {
         ))}
       </div>
 
-      {selectedTitle === "Director" && (
+      {selectedTitle === "Administrative Leadership" && (
         <div>
-          <h1 className="ml-[567px] text-[#1A2338] font-bold text-3xl">
+          <h1 className="  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
             Director and Trustees
           </h1>
-          <div className=" bg-white custom-shadow flex justify-between items-start ">
+          <div className="mt-2 bg-white custom-shadow py-[64px] px-[84px] shadow-lg rounded-xl ml-[4rem]">
             {/* Left Section */}
-            <div className="flex items-center space-x-10">
-              <div className="w-56 h-50 bg-gray-300 shadow mb-8">
-                <img src="image7.png" alt="images" />
+            <div className="flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
+              {/* Image Section */}
+              <div className="flex justify-start items-center mb-8">
+                <img src="image7.svg" alt="images" className="mr-8 w-52 h-64" />{" "}
+                <div className="flex flex-col">
+                  <p className="font-Roboto font-bold text-lg text-black">
+                    Mr. J Reddy
+                  </p>
+                  <p className="font-Roboto font-bold text-sm text-[#364C80] mt-2">
+                    Managing Director
+                  </p>
+                </div>
+                <p className="font-Roboto font-light text-lg text-[#364C80] ml-[5rem]">
+                  "Hello and welcome to St. Michael's School, a place where
+                  we're deeply committed to nurturing the next generation of
+                  learners equipped for the 21st century. Our mission goes
+                  beyond textbooks; it's about empowering students with
+                  knowledge, skills, and values that transcend conventional
+                  education. I'm [Your Name], and I'm honored to lead a
+                  dedicated team of educators who are not just here to teach but
+                  to inspire, challenge, and mentor students. Our goal is to
+                  nurture responsible, innovative, and compassionate global
+                  citizens. I invite you to join us on this educational journey
+                  where innovation and excellence meet to shape the future."
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
 
-              <div className="flex flex-col space-y-1">
-                <p className="font-Roboto font-bold text-lg text-black">
-                  Mr. Iran Fakir
-                </p>
-                <p className="font-Roboto font-bold text-lg text-blue-700">
-                  Lorem ipsum
-                </p>
-                <p className="font-Roboto font-bold text-lg text-blue-700">
-                  Lorem ipsum
+      {selectedTitle === "Operating Leadership" && (
+        <div>
+          <h1 className="  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
+            Director and Trustees
+          </h1>
+          <div className="mt-2 bg-white custom-shadow py-[94px] px-[84px] shadow-lg rounded-xl ml-[4rem]">
+            {/* Left Section */}
+            <div className="flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
+              {/* Image Section */}
+              <div className="flex justify-start items-center mb-8">
+                <img src="image8.svg" alt="images" className="mr-8 w-52 h-64" />{" "}
+                <div className="flex flex-col">
+                  <p className="font-Roboto font-bold text-lg text-black">
+                    Mrs. Radha Rani
+                  </p>
+                  <p className="font-Roboto font-bold text-sm text-[#364C80] mt-2">
+                    Principal
+                  </p>
+                </div>
+                <p className="font-Roboto font-light text-lg text-[#364C80] ml-[5rem]">
+                  As the Principal of St. Michael's School, I am proud to
+                  embrace the vision of the National Education Policy (NEP) that
+                  emphasizes holistic education. Our curriculum is thoughtfully
+                  designed to not only impart knowledge but also to foster
+                  literacy, numeracy, and effective communication skills. We are
+                  dedicated to equipping our students with the foundational
+                  skills they need to excel academically and thrive in the
+                  modern world. With a focus on these key aspects, we are
+                  committed to shaping well-rounded individuals who are prepared
+                  to face the challenges and opportunities of the 21st century
                 </p>
               </div>
             </div>
-
-            {/* Right Section */}
-            <div className="flex flex-col space-y-4">
-              <p className="font-Roboto font-bold text-lg text-black">
-                Mr. Name of the person
-              </p>
-            </div>
           </div>
         </div>
       )}
-
-      {selectedTitle === "Administrative" && (
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[#1A2338] font-bold text-3xl mb-10">
-            Administrative Leadership
+      <div className="flex space-x-64 lg:mb-[6rem] lg:mt-[4rem] ml-[16rem]">
+        <div className="flex flex-col">
+          <h1 className="font-bold text-xl text-[#000] line-height: 1.5rem">
+            Mr. J Reddy
           </h1>
-
-          {/* The main image and name */}
-          <div className="flex flex-col items-center mb-[42px]">
-            <div className="w-56 h-60 bg-gray-300 mb-4">
-              <img src="/image7.png" alt="Images" />
-            </div>
-            <p className="font-Roboto font-bold text-lg text-black">
-              Mr. Iran Fakir
-            </p>
-          </div>
-
-          {/* 3 additional images */}
-          {/* <div className="flex justify-between w-full">
-            <div className="w-56 h-60 bg-gray-300">
-              <img src="/image7.png" alt="Images" />
-            </div>
-            <div className="w-56 h-60 bg-gray-300">
-              <img src="/image7.png" alt="Images" />
-            </div>
-            <div className="w-56 h-60 bg-gray-300">
-              <img src="/image7.png" alt="Images" />
-            </div>
-          </div> */}
+          <p className="font-bold text-xl text-[#364C80]">Managing Director</p>
         </div>
-      )}
-
-      {selectedTitle === "Leadership" && (
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[#1A2338] font-bold text-3xl mb-10">
-            Leadership Core Team
+        <div className="flex flex-col">
+          <h1 className="font-bold text-xl text-[#000] line-height: 1.5rem">
+            Mr. J Reddy
           </h1>
-          <div className="flex flex-col items-center mb-[42px]">
-            <div className="w-56 h-60 bg-gray-300 mb-4">
-              <img src="/image7.png" alt="Images" />
-            </div>
-            <p className="font-Roboto font-bold text-lg text-black">
-              Mr. Iran Fakir
-            </p>
-          </div>
+          <p className="font-bold text-xl text-[#364C80]">Managing Director</p>
         </div>
-      )}
+        <div className="flex flex-col">
+          <h1 className="font-bold text-xl text-[#000] line-height: 1.5rem">
+            Mr. J Reddy
+          </h1>
+          <p className="font-bold text-xl text-[#364C80]">Managing Director</p>
+        </div>
+        <div className="flex flex-col">
+          <h1 className="font-bold text-xl text-[#000] line-height: 1.5rem">
+            Mr. J Reddy
+          </h1>
+          <p className="font-bold text-xl text-[#364C80]">Managing Director</p>
+        </div>
+      </div>
     </>
   );
 };

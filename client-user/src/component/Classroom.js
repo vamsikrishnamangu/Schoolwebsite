@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Classroom = () => {
+  const [expandedSection, setExpandedSection] = useState(null);
+
+  const toggleExpand = (section) => {
+    if (expandedSection === section) {
+      setExpandedSection(null); // Collapse the section if it's already expanded
+    } else {
+      setExpandedSection(section); // Expand the new section
+    }
+  };
   return (
     <>
       <div className="mt-20 ml-20">
@@ -8,8 +17,8 @@ const Classroom = () => {
           Beyond Classroom
         </h1>
       </div>
-      <div className="flex flex-row lg:justify-around gap-9 lg:ml-30 ml-[42px]  mt-10 items-center pt-3 pb-3 pl-4 pr-1 rounded-sm bg-white shadow-md lg:shadow-none">
-        <div className="flex flex-col items-center py-[4px] px-[2px] ml-[50px]">
+      <div className="flex justify-center items-start">
+        <div className="flex flex-col py-[4px] px-[2px] ml-[106px]">
           <div>
             <img
               className="lg:h-64 lg:w-64 w-[199px] h-[199px] "
@@ -18,19 +27,23 @@ const Classroom = () => {
               alt="Ellipse"
             />
           </div>
-          <div className="flex flex-row gap-3.5 space-x-2 mt-7">
+          <div className="flex flex-col gap-3.5 space-x-2 mt-7">
             <img
-              className="lg:h-11 lg:w-11 w-[26px] h-[26px]"
+              className="lg:h-11 lg:w-11 w-[26px] h-[26px] "
               src="/Group6.png"
               alt="power"
             />
 
-            <div className="font-bold lg:text-2xl text-md ml-[8px] text-[#1A2338]">
-              Power of One
-              <p className="lg:text-lg text-md font-normal  mt-2">
-                Lorem ipsum dolor sit amet consectetur.
-                <br />
-                Aenean amet quam auctor neque pellentes.
+            <div className="font-bold lg:text-2xl text-md ml-[8px] text-[#1A2338] ">
+              <p className="">Extra-curricular Activities</p>
+
+              <p
+                className="lg:text-lg text-md font-normal  mt-2  text-[#1A2338] "
+                style={{ lineHeight: "26px" }}
+              >
+                Our Extra-Curricular Activities provide a balanced education by
+                developing essential life skills and fostering teamwork and
+                leadership.
               </p>
             </div>
           </div>
@@ -39,20 +52,24 @@ const Classroom = () => {
             Learn More
           </button>
         </div>
-
-        <div className="flex flex-col items-center  py-[12px] px-[2px]">
+        <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
+        <div className="flex flex-col ml-[57px]  py-[12px] px-[2px]">
           <img
-            className="lg:h-64 lg:w-64 w-[199px] h-[199px] ml-[64px] "
+            className="lg:h-64 lg:w-64 w-[199px] h-[199px]  "
             src="/Ellipse 2.png"
             alt="Ellipse"
           />
-          <div className="flex flex-row gap-3.5  mt-7 ">
+          <div className="flex flex-col gap-3.5  mt-7 ">
             <img className="h-11 w-11" src="/Group7.png" alt="power" />
-            <div className="font-bold text-2xl ml-[8px] text-[#1A2338]">
-              Enrichment Activities
-              <p className="text-lg font-normal text-center mt-2">
-                Lorem ipsum dolor sit amet consectetur.
-                <br /> Aenean amet quam auctor neque pellentes .
+            <div className="font-bold text-2xl  text-[#1A2338]">
+              Power of One
+              <p
+                className="text-lg font-normal  mt-2 text-[#1A2338]"
+                style={{ lineHeight: "26px" }}
+              >
+                The "Power of One" program cultivates empathy and communal
+                responsibility, showing students that individual acts can make a
+                big difference.
               </p>
             </div>
           </div>
@@ -60,17 +77,25 @@ const Classroom = () => {
             Learn More
           </button>
         </div>
-
-        <div className="flex flex-col items-center">
-          <img className="h-64 w-64" src="/Ellipse 3.png" alt="Ellipse" />
-          <div className="flex flex-row gap-3.5  mt-7">
-            <div className="flex gap-4">
+        <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
+        <div className="flex flex-col ml-[57px]">
+          <img
+            className="lg:h-64 lg:w-64 w-[199px] h-[199px]"
+            src="/Ellipse 3.png"
+            alt="Ellipse"
+          />
+          <div className="flex flex-col gap-3.5  mt-7">
+            <div className="gap-4">
               <img className="h-11 w-11" src="/Group8.png" alt="power" />
-              <div className="font-bold text-2xl ml-[8px] text-[#1A2338]">
-                Extra-curricular Activities
-                <p className="text-lg font-normal text-center mt-2">
-                  Lorem ipsum dolor sit amet consectetur.
-                  <br /> Aenean amet quam auctor neque pellentes .
+              <div className="font-bold text-2xl  text-[#1A2338]">
+                Enrichment Activities
+                <p
+                  className="text-lg font-normal mt-2 text-[#1A2338]"
+                  style={{ lineHeight: "26px" }}
+                >
+                  Our Enrichment Activities extend learning beyond the
+                  classroom, fostering intellectual curiosity and social skills.
+                  through arts, STEM, and more.
                 </p>
               </div>
             </div>

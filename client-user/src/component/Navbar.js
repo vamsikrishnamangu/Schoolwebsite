@@ -1,25 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiChevronLeft, HiChevronRight, HiX } from "react-icons/hi";
-
+const texts = [
+  "Admission open for AY 24-25 Click here.",
+  "Are you a passionate educator? We are hiring. Apply now. Click here.",
+  "Latest Newsletter released click here.",
+];
 const Navbar = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
   return (
-    <div className="bg-[#1A2338] lg:p-4 p-2">
+    <div className="bg-[#1A2338]">
       <div className="lg:flex-row items-center lg:justify-between">
-        <div className="flex flex-row justify-between items-center lg:mb-4">
+        <div className="flex flex-row justify-between items-center ">
           {/* Logo */}
           <div>
             <img
               src="/logo.svg"
               alt="logo"
-              className="w-[48px] h-[40px] lg:w-[122px] lg:h-[104px] "
+              className="w-[48px] h-[40px] lg:w-[12rem] lg:h-[8rem] "
             />
           </div>
 
           {/* Social Icons */}
-          <div className="flex flex-row gap-[13px] justify-center items-center ">
+          <div className="flex flex-row gap-[13px]">
             <a href="https://www.facebook.com/openai/">
               <img src="/facebook.png" alt="Facebook" />
             </a>
@@ -29,24 +42,25 @@ const Navbar = () => {
             <a href="https://www.youtube.com/openai/">
               <img src="/video.png" alt="Video" />
             </a>
+            <a href="https://www.linkedin.com/openai/">
+              <img src="/linkedin.png" alt="Video" />
+            </a>
           </div>
-          <div className="flex items-center ml-[50px] lg:bg-[#1A2338] p-4 lg:mt-0 mt-4 w-[390px] h-[21px]">
-            {/* Left Chevron Icon */}
-            <HiChevronLeft className="text-white" size={24} />
-
-            {/* Text in the middle */}
-            <div className="mx-4">
-              <a
-                href="/admissions-page"
-                className="text-white font-semibold text-center"
-              >
-                Get ready for admission <br />
-                open for 24-25
-              </a>
+          <div className="flex items-center ml-[50px] lg:bg-[#1A2338] p-4 lg:mt-0 mt-4 w-[390px] h-[21px] text-white">
+            <HiChevronLeft size={24} />
+            <div className="mx-4 text-xl font-normal overflow-hidden whitespace-nowrap">
+              {texts.map((text, index) => (
+                <p
+                  key={index}
+                  className={`${
+                    index === currentTextIndex ? "opacity-100" : "opacity-0"
+                  } transition-opacity duration-500`}
+                >
+                  {text}
+                </p>
+              ))}
             </div>
-
-            {/* Right Chevron Icon */}
-            <HiChevronRight className="text-white" size={24} />
+            <HiChevronRight size={24} />
           </div>
           <div className="h-20 w-px bg-white" />
           <div className="space-x-9">
@@ -71,11 +85,11 @@ const Navbar = () => {
             /> */}
 
           {showPopup && (
-            <div className="fixed top-0 right-0 left-0 bottom-0 flex justify-center items-center bg-[rgba(32,38,34,0.9)] z-10">
-              <div className="bg-[#1A2338] rounded-lg p-4 relative w-full sm:w-[390px] lg:w-[1280px]  xl:w-[1280px] 2xl:w-[1440px] h-[1520px] lg:h-[800px] font-bold text-xl ">
+            <div className="fixed top-0 right-0 left-0 bottom-0 flex justify-center items-center bg-[rgba(32,38,34,0.9)] backdrop-blur-md z-10">
+              <div className="bg-[#1A2338] bg-opacity-70  rounded-lg p-4 relative w-full sm:w-[390px] lg:w-[1280px] xl:w-[1280px] 2xl:w-[1440px] h-[1520px] lg:h-[800px] font-bold text-xl">
                 {/* Close Button */}
                 <HiX
-                  className="cursor-pointer text-[#fff] absolute sm:top-2 sm:right-2 top-[10px] right-[10px] z-50"
+                  className="cursor-pointer text-[#fff] absolute sm:top-2 sm:right-2 top-[10px] right-[10px] z-50 lg:mr-[10rem] lg:mt-[5rem]"
                   size={24}
                   onClick={() => setShowPopup(false)}
                 />
@@ -83,7 +97,7 @@ const Navbar = () => {
                 <img
                   src="/logo.svg"
                   alt="logo"
-                  className="lg:mt-[64px] mt-[80px]"
+                  className="lg:mt-[40px] mt-[50px]"
                 />
 
                 {/* Navigation Items */}
@@ -91,7 +105,7 @@ const Navbar = () => {
                   <div>
                     <Link
                       to="/"
-                      className="block px-4 py-2 text-[#6E99FF] lg:mt-[64px]"
+                      className="block px-4 py-2 text-[#6E99FF] lg:mt-[50px]"
                     >
                       Home page
                     </Link>

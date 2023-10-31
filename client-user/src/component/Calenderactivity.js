@@ -11,7 +11,7 @@ const Calendaractivity = () => {
       <div className="mt-[107px] relative">
         <div className="flex flex-col lg:flex-row items-center lg:w-full lg:h-[321px] w-[421px] h-[336px] bg-[#1A2338]">
           {/* Image */}
-          <div className="lg:ml-[308px] ml-[20px] lg:mr-[43px] mr-[60px] relative -top-16">
+          <div className="lg:ml-[17rem] ml-[20px] relative -top-16">
             <img
               src="/image3.svg"
               alt="images"
@@ -19,18 +19,15 @@ const Calendaractivity = () => {
             />
           </div>
 
-          {/* Text */}
           <div className="flex flex-col  lg:ml-10 ml-[63px]">
             <h1 className="text-white font-semibold lg:text-4xl  text-lg leading-[24px]">
               Yearly Calendar
             </h1>
-            <span className="mt-4 text-white font-Roboto lg:text-sm text-xs">
-              consectetur. Aenean amet quam auctor neque pellentes Ullamcorper
-              orci felis
+            <span className="mt-4 text-white font-Roboto font-normal lg:text-2xl text-lg">
+              Download our yearly calendar by clicking the below button.
             </span>
 
-            {/* Download Button */}
-            <button className="flex mt-4 items-center justify-center w-[210px] h-[50px] border-[#1A2338] border-solid border rounded-md bg-white gap-2.5">
+            <button className="flex mt-4 items-center justify-center w-[210px] h-[50px] border-[#1A2338] border-solid border rounded-md bg-white gap-2.5  txt-xl font-normal text-[#1A2338]">
               Download
             </button>
           </div>
@@ -39,7 +36,7 @@ const Calendaractivity = () => {
       <div className="mt-[107px] relative">
         <div className="lg:flex flex-row-reverse  lg:w-full lg:h-[321px] w-[421px] h-[336px] bg-[#1A2338]">
           {/* Image */}
-          <div className="lg:ml-[308px] ml-[20px] lg:mr-[43px] mr-[60px] relative -top-16">
+          <div className="lg:ml-[308px] ml-[20px] lg:mr-[14rem] mr-[60px] relative -top-16">
             <img
               src="/image4.svg"
               alt="images"
@@ -48,13 +45,12 @@ const Calendaractivity = () => {
           </div>
 
           {/* Text */}
-          <div className="flex flex-col  lg:ml-10 ml-[63px]">
+          <div className="flex flex-col  lg:ml-0 ml-[20px]  mr-[60px] relative ">
             <h1 className="text-white font-semibold lg:text-4xl lg:mt-[40px] text-lg leading-[24px]">
               Our Monthly Newsletters
             </h1>
-            <span className="mt-4 text-white font-Roboto lg:text-sm text-xs">
-              consectetur. Aenean amet quam auctor neque pellentes Ullamcorper
-              orci felis
+            <span className="mt-4 text-white font-Roboto font-normal lg:text-2xl text-lg">
+              Checkout our monthly newsletters by clicking on the links below
             </span>
 
             {/* Download Button */}
