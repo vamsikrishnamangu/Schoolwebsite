@@ -100,8 +100,8 @@ const updateContact = async (req, res) => {
     const admissionId = req.params.admissionId;
     const { Email, ReEnteremail } = req.body;
 
-    const updatedContact = await admissionModel.findOneAndUpdate(
-      { admissionId: admissionId },
+    const updatedContact = await admissionModel.findByIdAndUpdate(
+      admissionId,
       { $set: { Email: Email, ReEnteremail: ReEnteremail } },
       { new: true }
     );

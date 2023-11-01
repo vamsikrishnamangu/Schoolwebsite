@@ -1,8 +1,24 @@
 const activityModel = require("../Models/activityModel");
-
+const multer = require("multer");
+const storage = multer.memoryStorage(); // using memory storage for simplicity
+const upload = multer({ storage: storage });
 const activityData = async (req, res) => {
   try {
-    const { Heading, Description, Photo, year, Month, Pdf } = req.body;
+    // Assuming Photo and Pdf are file fields in the form-data
+    const { Heading, Description, year, Month } = req.body;
+
+    let Photo, Pdf;
+
+    if (req.files && req.files["Photo"]) {
+      // Convert Photo to base64 or any desired format
+      Photo = req.files["Photo"][0].buffer.toString("base64");
+    }
+
+    if (req.files && req.files["Pdf"]) {
+      // Convert Pdf to base64 or any desired format
+      Pdf = req.files["Pdf"][0].buffer.toString("base64");
+    }
+
     const newData = new activityModel({
       Heading,
       Description,
@@ -11,10 +27,13 @@ const activityData = async (req, res) => {
       Pdf,
       Month,
     });
+
     await newData.save();
-    return res.send(201)({
+
+    return res.status(201).send({
+      // Corrected status method
       status: true,
-      msg: "data created succesfully",
+      msg: "data created successfully",
       data: newData,
     });
   } catch (err) {
@@ -23,7 +42,6 @@ const activityData = async (req, res) => {
       .send({ status: false, msg: "server error", error: err.message });
   }
 };
-
 const getactivityData = async (req, res) => {
   try {
     const activityData = await activityModel.find({ isDeleted: false });
@@ -54,8 +72,8 @@ const updateactivityData = async (req, res) => {
   try {
     const { Heading, Description, Photo, year, Month, Pdf } = req.body;
     const activityId = req.params.activityId;
-    const Updateactivity = await activityModel.findOneAndUpdate(
-      { activityId: activityId },
+    const Updateactivity = await activityModel.findByIdAndUpdate(
+      activityId,
       {
         $set: {
           Heading: Heading,

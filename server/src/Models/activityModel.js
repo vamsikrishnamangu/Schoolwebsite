@@ -32,7 +32,7 @@ const activityschema = new mongoose.Schema(
       ],
     },
     year: {
-      type: Number,
+      type: String,
     },
     isDeleted: {
       type: Boolean,

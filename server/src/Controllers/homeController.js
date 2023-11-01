@@ -57,11 +57,17 @@ const updateData = async (req, res) => {
   try {
     const { Heading, Description, Photo } = req.body;
     const homeId = req.params.homeId;
-    const UpdateHome = await homeModel.findOneAndUpdate(
-      { homeId: homeId }, // Or { _id: homeId } if using _id
+
+    // console.log("Updating homeId:", homeId);
+
+    const UpdateHome = await homeModel.findByIdAndUpdate(
+      homeId,
       { $set: { Heading, Description, Photo } },
       { new: true }
     );
+
+    // console.log("Update result:", UpdateHome);
+
     return res.status(200).send({
       status: true,
       msg: "Data updated successfully",

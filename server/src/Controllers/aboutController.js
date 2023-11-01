@@ -56,8 +56,8 @@ const updateaboutData = async (req, res) => {
   try {
     const { Photo } = req.body;
     const aboutId = req.params.aboutId;
-    const UpdateHome = await aboutModel.findOneAndUpdate(
-      { aboutId: aboutId },
+    const UpdateHome = await aboutModel.findByIdAndUpdate(
+      aboutId,
       { $set: { Photo: Photo } },
       { new: true }
     );

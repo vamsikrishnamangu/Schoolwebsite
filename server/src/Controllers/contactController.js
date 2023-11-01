@@ -18,14 +18,14 @@ const StudentContacts = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail", // Use your preferred email service
       auth: {
-        user: "yourEmail@gmail.com", // Your email
-        pass: "yourEmailPassword", // Your email password
+        user: "nikitalilhore123@gmail.com", // Your email
+        pass: "dzjfxzvmwndjwmme", // Your email password
       },
     });
 
     const mailOptions = {
-      from: "yourEmail@gmail.com",
-      to: "enquiryTeamEmail@example.com", // The email of the enquiry team
+      from: "nikitalilhore123@gmail.com",
+      to: "nikitalilhore2004@gmail.com", // The email of the enquiry team
       subject: "New Student Details Submission",
       text: `
         Email: ${contact.Email}
@@ -98,8 +98,8 @@ const updateContact = async (req, res) => {
     const contactId = req.params.contactId;
     const { Email, ReEnteremail } = req.body;
 
-    const updatedContact = await contactModel.findOneAndUpdate(
-      { contactId: contactId },
+    const updatedContact = await contactModel.findByIdAndUpdate(
+      contactId,
       { $set: { Email: Email, ReEnteremail: ReEnteremail } },
       { new: true }
     );

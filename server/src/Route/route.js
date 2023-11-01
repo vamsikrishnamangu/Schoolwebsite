@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
-const upload = multer();
+
+const storage = multer.memoryStorage(); // using memory storage for simplicity
+const upload = multer({ storage: storage });
 const {
   homeData,
   getData,
@@ -40,32 +42,44 @@ const {
 //Home//
 router.post("/createData", upload.single("Photo"), homeData);
 router.get("/getData", getData);
-router.get("/getById", getById);
-router.put("/updataeData", updateData);
+router.get("/getById/:homeId", getById);
+router.put("/updateData/:homeId", upload.single("Photo"), updateData);
 router.delete("/deleteData", Deletedata);
-router.delete("/deleteId", DeleteById);
+router.delete("/deleteId/:homeId", DeleteById);
 
 //contact//
 router.post("/contacData", StudentContacts);
 router.get("/getcontactData", getAllContacts);
-router.get("/getcontactById", getContactById);
-router.put("/updataecontactData", updateContact);
+router.get("/getcontactById/:contactId", getContactById);
+router.put("/updataecontactData/:contactId", updateContact);
 router.delete("/deletecontactData", deleteContact);
 
 //About//
 router.post("/createaboutData", upload.single("Photo"), aboutData);
 router.get("/getaboutData", getaboutData);
-router.get("/getaboutById", getaboutById);
-router.put("/updataabouteData", updateaboutData);
+router.get("/getaboutById/:aboutId", getaboutById);
+router.put(
+  "/updataabouteData/:aboutId",
+  upload.single("Photo"),
+  updateaboutData
+);
 router.delete("/deleteaboutData", Deleteaboutdata);
-router.delete("/deleteaboutId", DeleteaboutById);
+router.delete("/deleteaboutId/:aboutId", DeleteaboutById);
 
 //Activity//
-router.post("/createactivityData", upload.single("Photo"), activityData);
+router.post(
+  "/createactivityData",
+  upload.fields([{ name: "Photo" }, { name: "Pdf" }]),
+  activityData
+);
 router.get("/getactivityData", getactivityData);
-router.get("/getactivityById", getactivityById);
-router.put("/updataactivityeData", updateactivityData);
+router.get("/getactivityById/:activityId", getactivityById);
+router.put(
+  "/updataactivityeData/:activityId",
+  upload.fields([{ name: "Photo" }, { name: "Pdf" }]),
+  updateactivityData
+);
 router.delete("/deleteactivityData", Deleteactivitydata);
-router.delete("/deleteactivityId", DeleteactivityById);
+router.delete("/deleteactivityId/:activityId", DeleteactivityById);
 
 module.exports = router;
