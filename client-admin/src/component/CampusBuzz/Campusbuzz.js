@@ -3,12 +3,12 @@ import Publish from "../Buttons/publishButton";
 import Heading from "../Home/Heading";
 import FormUI from "./Date";
 import SaveButton from "../Buttons/saveButton";
-
+import { MdOutlineUploadFile } from "react-icons/md";
 const Campusbuzz = () => {
   return (
     <>
       <div className="bg-[#F1F5F9] bg-cover w-[88vw] h-full">
-        <div className="flex flex-row">
+        <div className="flex flex-row font-[Roboto]">
           <div className="flex flex-col">
             <h1
               className="lg:ml-[40px] lg:mt-[24px] 2xl:ml-[90px] 2xl:mt-[48px] font-Roboto font-semibold lg:text-2xl 2xl:text-4xl text-[#1A2338]"
@@ -28,18 +28,18 @@ const Campusbuzz = () => {
           <Heading />
         </div>
         <button
-          className=" 2xl:ml-[860px] 2xl:mt-[8px] lg:ml-[600px]  w-[134px] h-[50px]  border-2 border-gray-500 rounded-lg mt-[4px]"
+          className="font-[Roboto] 2xl:ml-[860px] 2xl:mt-[8px] lg:ml-[600px]  w-[134px] h-[50px]  border-2 border-gray-500 rounded-lg mt-[4px]"
           // onClick={handleAddRow}
         >
           ADD ROW +
         </button>
         <div>
-          <p className=" 2xl:ml-[90px] lg:ml-[40px]  font-bold text-xl text-[#1A2338B2]">
+          <p className="font-[Roboto] 2xl:ml-[90px] lg:ml-[40px]  font-bold text-xl text-[#1A2338B2]">
             Newsletters Page
           </p>
         </div>
 
-        <div className="2xl:ml-[90px] ml-[20px] lg:ml-[40px]  2xl:w-[934px] 2xl:h-[502px] lg:w-[700px] lg:h-[320px] rounded-3xl  bg-[#FFFFFF]">
+        <div className="font-[Roboto] 2xl:ml-[90px] ml-[20px] lg:ml-[40px]  2xl:w-[934px] 2xl:h-[502px] lg:w-[700px] lg:h-[320px] rounded-3xl  bg-[#FFFFFF]">
           <div>
             <FormUI />
           </div>
@@ -62,7 +62,8 @@ const Campusbuzz = () => {
               </label>
               <div className=" ml-[30px] border-dotted border-2 border-[#0000001f] px-12 py-2 rounded 2xl:text-sm lg:text-sm font-semibold text-[#1A233899] 2xl:w-[390px] lg:w-[360px] 2xl:h-[152px] lg:h-[130px]">
                 <div className="2xl:mt-[34px] lg:mt-[24px] 2xl:ml-[100px] lg:ml-[50px]">
-                  <img src="/upload.png" alt="pdf" />
+                  {/* <img src="/upload.png" alt="pdf" /> */}
+                  <MdOutlineUploadFile style={{ color: "#2196F3" }} />
                 </div>
                 <p className="text-sm text-[#000] mt-[11px]">
                   <span className="font-normal text-sm text-[#2196F3 ]">

@@ -21,13 +21,13 @@ const VisitAdmission = () => {
   return (
     <div>
       <div className="ml-[7rem] mt-[1rem]">
-        <h1 className="text-[#1A2338] lg:mt-[40px] font-Roboto lg:text-4xl  text-lg mt-[28px] font-bold">
+        <h1 className="font-[Roboto] text-[#1A2338] lg:mt-[40px] font-Roboto lg:text-4xl  text-lg mt-[28px] font-bold">
           In This Section
         </h1>
       </div>
 
       <div className="flex flex-row">
-        <div className="flex flex-col ml-[7rem]">
+        <div className=" font-[Roboto] flex flex-col ml-[7rem]">
           <img
             className="mt-[5rem] w-[73px] h-[73px]"
             src="/assignment.svg"
@@ -45,7 +45,7 @@ const VisitAdmission = () => {
             <span className="text-xl">&#x2192;</span>{" "}
           </div>
         </div>
-        <div className="flex flex-col ml-[7rem]">
+        <div className="font-[Roboto] flex flex-col ml-[7rem]">
           <img
             className="mt-[5rem] w-[73px] h-[73px]"
             src="/phoneImage.svg"
@@ -62,8 +62,8 @@ const VisitAdmission = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row">
-        <div className="flex flex-col ml-[7rem]">
+      <div className="flex flex-row font-[Roboto]">
+        <div className="font-[Roboto] flex flex-col ml-[7rem]">
           <img
             className="w-[73px] h-[73px] mt-[5rem]"
             src="/accountImage.svg"
@@ -81,7 +81,7 @@ const VisitAdmission = () => {
             <span className="text-xl">&#x2192;</span>{" "}
           </div>
         </div>
-        <div className="flex flex-col ml-[7rem]">
+        <div className="font-[Roboto] flex flex-col ml-[7rem]">
           <img
             className="w-[73px] h-[73px] mt-[5rem]"
             src="/inbox.svg"
@@ -105,7 +105,7 @@ const VisitAdmission = () => {
         {isModalOpen && (
           <div className=" shadow-md fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
             <div className="bg-white rounded-lg p-5 max-w-lg w-full relative">
-              <div className=" lg:ml-[3rem] lg:mt-[4rem] flex flex-col space-y-4">
+              <div className=" font-[Roboto] lg:ml-[3rem] lg:mt-[4rem] flex flex-col space-y-4">
                 <div className="mb-4">
                   <label className="block text-black font-normal text-xl">
                     Name of the Parent <span className="text-red-500">*</span>
@@ -168,7 +168,7 @@ const VisitAdmission = () => {
         )}
         {showThankYou && (
           <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white rounded-lg p-5 max-w-lg w-full relative text-center space-x-4s">
+            <div className="font-[Roboto] bg-white rounded-lg p-5 max-w-lg w-full relative text-center space-x-4s">
               <h2 className="text-4xl  font-bold mt-[10rem]">Thank You</h2>
               <p className="font-roboto  text-2xl font-medium mb-4">
                 We will call you back.
@@ -183,13 +183,13 @@ const VisitAdmission = () => {
           </div>
         )}
       </div>
-      <div className="mt-[7rem] text-center items-center">
+      <div className="font-[Roboto] mt-[7rem] text-center items-center">
         <button className="font-3xl font-bold text-[#1A2338] py-[12px] px-[20px] rounded-md border border-[#1A2338]">
           Download Fee Structure
         </button>
       </div>
       <div>
-        <p className="font-normal text-2xl text-black mt-[3.5rem] ml-[8rem] mb-[4.9rem]  ">
+        <p className=" font-[Roboto] font-normal text-2xl text-black mt-[3.5rem] ml-[8rem] mb-[4.9rem]  ">
           “We offer a variety of options to accommodate your preferences and
           make the admissions process as seamless as possible.”
         </p>

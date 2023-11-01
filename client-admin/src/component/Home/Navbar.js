@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
+import { BiChevronDown } from "react-icons/bi";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-[#1A2338] h-[100vh]">
+      <div className="bg-[#1A2338] h-[100vh] font-[Roboto]">
         <div className="flex flex-row">
           <div>
             <img
@@ -22,11 +23,15 @@ const Navbar = () => {
             <Link to="/Home" className="flex items-center">
               <AiOutlineHome className="w-[30px] h-[30px] text-[#fff] ml-[24px]" />
               <h1
-                className="ml-[13px] text-[#85A3B8] text-lg  font-medium"
+                className="ml-[13px] text-[#85A3B8] text-lg font-medium"
                 style={{ lineHeight: "15px" }}
               >
                 Home Page
               </h1>
+              <BiChevronDown
+                className="w-[30px] h-[30px] text-[#fff] lg:ml-[2rem]"
+                style={{ color: "#85A3B8" }}
+              />
             </Link>
           </li>
           <li className="flex flex-row items-center mt-[50px]">
@@ -35,17 +40,25 @@ const Navbar = () => {
               <h1 className="ml-[13px] text-[#85A3B8] text-lg  font-medium">
                 About Us
               </h1>
+              <BiChevronDown
+                className="w-[30px] h-[30px] text-[#fff] lg:ml-[3rem]"
+                style={{ color: "#85A3B8" }}
+              />
             </Link>
           </li>
           <li className="flex flex-row items-center mt-[50px]">
             <Link to="/Admission" className="flex items-center">
               <AiOutlineHome className="w-[30px] h-[30px] text-[#fff] ml-[24px]" />
               <h1
-                className="ml-[13px] text-[#85A3B8] text-lg mr-[69px] font-medium"
+                className="ml-[13px] text-[#85A3B8] text-lg  font-medium"
                 style={{ lineHeight: "15px" }}
               >
                 Admissions
               </h1>
+              <BiChevronDown
+                className="w-[30px] h-[30px] text-[#fff] lg:ml-[2rem]"
+                style={{ color: "#85A3B8" }}
+              />
             </Link>
           </li>
           <li className="flex flex-row items-center mt-[50px]">
@@ -57,6 +70,10 @@ const Navbar = () => {
               >
                 Our Activities
               </h1>
+              <BiChevronDown
+                className="w-[30px] h-[30px] text-[#fff] lg:ml-[1rem]"
+                style={{ color: "#85A3B8" }}
+              />
             </Link>
           </li>
           <li className="flex flex-row items-center mt-[50px]">
@@ -68,6 +85,10 @@ const Navbar = () => {
               >
                 Contact Us
               </h1>
+              <BiChevronDown
+                className="w-[30px] h-[30px] text-[#fff] lg:ml-[2rem]"
+                style={{ color: "#85A3B8" }}
+              />
             </Link>
           </li>
         </ul>

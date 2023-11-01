@@ -7,7 +7,7 @@ const Admission = () => {
   const [reEnterEmail, setReEnterEmail] = useState("");
   return (
     <>
-      <div className="bg-[#F1F5F9] bg-cover w-[88vw] h-[100vh]">
+      <div className="font-[Roboto] bg-[#F1F5F9] bg-cover w-[88vw] h-[100vh]">
         <div>
           <h1
             className="2xl:ml-[90px] lg:ml-[40px] mt-[48px] font-Roboto font-semibold 2xl:text-4xl lg:text-2xl text-[#1A2338]"

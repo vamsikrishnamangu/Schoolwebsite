@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Classroom = () => {
-  const [expandedSection, setExpandedSection] = useState(null);
+  // const [expandedSection, setExpandedSection] = useState(null);
 
-  const toggleExpand = (section) => {
-    if (expandedSection === section) {
-      setExpandedSection(null); // Collapse the section if it's already expanded
-    } else {
-      setExpandedSection(section); // Expand the new section
-    }
-  };
+  // const toggleExpand = (section) => {
+  //   if (expandedSection === section) {
+  //     setExpandedSection(null); // Collapse the section if it's already expanded
+  //   } else {
+  //     setExpandedSection(section); // Expand the new section
+  //   }
+  // };
   return (
     <>
-      <div className="mt-20 ml-20">
+      <div className=" font-[Roboto] mt-20 ml-20">
         <h1 className="font-bold lg:text-4xl text-3xl lg:ml-[84px] ">
           Beyond Classroom
         </h1>
       </div>
-      <div className="flex justify-center items-start">
-        <div className="flex flex-col py-[4px] px-[2px] ml-[106px]">
+      <div className="font-[Roboto] flex justify-center items-start">
+        <div className="font-[Roboto] flex flex-col py-[4px] px-[2px] ml-[106px]">
           <div>
             <img
               className="lg:h-64 lg:w-64 w-[199px] h-[199px] "
@@ -53,7 +53,7 @@ const Classroom = () => {
           </button>
         </div>
         <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
-        <div className="flex flex-col ml-[57px]  py-[12px] px-[2px]">
+        <div className=" font-[Roboto] flex flex-col ml-[57px]  py-[12px] px-[2px]">
           <img
             className="lg:h-64 lg:w-64 w-[199px] h-[199px]  "
             src="/Ellipse 2.png"
@@ -78,7 +78,7 @@ const Classroom = () => {
           </button>
         </div>
         <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
-        <div className="flex flex-col ml-[57px]">
+        <div className=" font-[Roboto] flex flex-col ml-[57px]">
           <img
             className="lg:h-64 lg:w-64 w-[199px] h-[199px]"
             src="/Ellipse 3.png"

@@ -56,7 +56,7 @@ function FormUI() {
             </select>
           </div>
         </div>{" "}
-        <div className="flex flex-col">
+        <div className="flex flex-col font-[Roboto]">
           <label className="ml-[30px] mt-[27px] 2xl:text-lg lg:text-sm font-semibold text-[#1A233899]">
             Heading
           </label>
@@ -71,7 +71,7 @@ function FormUI() {
           />
         </div>
       </div>
-      <div className="flex flex-col 2xl:ml-[10px]">
+      <div className="flex flex-col 2xl:ml-[10px] font-[Roboto]">
         <h1 className="2xl:ml-[32px] lg:ml-[32px] pt-[26px] font-bold text-sm  text-[#1A233899]">
           Photo
         </h1>

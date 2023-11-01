@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 const Publish = ({ onCancel, onPublish }) => {
   return (
     <>
-      <div className="2xl:mt-[74px] lg:mt-[30px] ml-[178px] space-x-2">
+      <div className="font-[Roboto] 2xl:mt-[74px] lg:mt-[30px] ml-[178px] space-x-2">
         <Button
           onClick={onCancel}
           variant="outlined"
@@ -30,7 +30,8 @@ const Publish = ({ onCancel, onPublish }) => {
             fontSize: "14px",
             fontWeight: "500px",
             borderRadius: "4px",
-            hover: "border-purple-400",
+
+            hover: "bg-blue",
           }}
         >
           PUBLISH

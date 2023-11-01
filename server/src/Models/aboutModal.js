@@ -5,6 +5,10 @@ const aboutSchema = new mongoose.Schema(
     Photo: {
       type: String,
     },
+    isDeleted: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

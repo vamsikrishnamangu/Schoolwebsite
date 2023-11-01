@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className="bg-[#1A2338]">
-      <div className="lg:flex-row items-center lg:justify-between">
+      <div className=" font-[Roboto] lg:flex-row items-center lg:justify-between">
         <div className="flex flex-row justify-between items-center ">
           {/* Logo */}
           <div>
@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
           <div className="h-20 w-px bg-white" />
           <div className="space-x-9">
-            <p className="text-white font-semibold ">Pay Fee</p>
+            <p className="text-[#FFA901] font-semibold ">Pay Fee</p>
           </div>
           {/* Nav Toggle */}
           <div className="relative">

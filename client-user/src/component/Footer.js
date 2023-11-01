@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className="lg:w-full lg:h-[428px] w-[390px] h-[504px] bg-gradient-to-r from-[#345FC5] via-[#283B68] to-[#101625] lg:mt-0 mt-[52px]"
+      className="font-[Roboto] lg:w-full lg:h-[428px] w-[390px] h-[504px] bg-gradient-to-r from-[#345FC5] via-[#283B68] to-[#101625] lg:mt-0 mt-[52px]"
       style={{
         backgroundImage:
           "linear-gradient(86.43deg, #345FC5 -12.84%, #283B68 37.49%, #28468B 86.49%, #101625 113.17%)",
       }}
     >
-      <div className=" hidden lg:inline-flex  flex-row space-x-10 2xl:space-x-40  lg:grid-cols-5 gap-8 px-6 py-16">
+      <div className="font-[Roboto] hidden lg:inline-flex  flex-row space-x-10 2xl:space-x-40  lg:grid-cols-5 gap-8 px-6 py-16">
         <div>
           <div className="lg:flex justify-center ml-[84px] ">
             <img src="/logo.svg" alt="logo" className="w-[301px] h-[301px] " />
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="lg:hidden grid-cols-2 gap-8 px-6 py-16">
+      <div className="font-[Roboto] lg:hidden grid-cols-2 gap-8 px-6 py-16">
         <div>
           <div className="flex flex-row">
             <div className="w-[156px]  space-x-36 h-[131px] mt-[53px] ml-[20px] ">

@@ -6,7 +6,7 @@ const Heading = () => {
     <>
       <div className="2xl:ml-[90px] ml-[20px] lg:ml-[40px]  2xl:w-[934px] 2xl:h-[502px] lg:w-[700px] lg:h-[320px] rounded-3xl  bg-[#FFFFFF]">
         <div className="flex flex-row">
-          <div className="flex flex-col">
+          <div className="flex flex-col font-[Roboto]">
             <label className="ml-[30px] mt-[27px] 2xl:text-lg lg:text-sm font-semibold text-[#1A233899]">
               Heading
             </label>
@@ -31,7 +31,7 @@ const Heading = () => {
             ></textarea>
           </div>
 
-          <div className="flex flex-col ">
+          <div className="flex flex-col font-[Roboto]">
             <h1 className="2xl:ml-[32px] lg:ml-[32px] pt-[26px] font-bold text-sm  text-[#1A233899]">
               Photo
             </h1>

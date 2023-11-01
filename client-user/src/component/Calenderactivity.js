@@ -9,7 +9,7 @@ const Calendaractivity = () => {
         <NewsAndEvents />
       </div>
       <div className="mt-[107px] relative">
-        <div className="flex flex-col lg:flex-row items-center lg:w-full lg:h-[321px] w-[421px] h-[336px] bg-[#1A2338]">
+        <div className="font-[Roboto] flex flex-col lg:flex-row items-center lg:w-full lg:h-[321px] w-[421px] h-[336px] bg-[#1A2338]">
           {/* Image */}
           <div className="lg:ml-[17rem] ml-[20px] relative -top-16">
             <img
@@ -23,7 +23,7 @@ const Calendaractivity = () => {
             <h1 className="text-white font-semibold lg:text-4xl  text-lg leading-[24px]">
               Yearly Calendar
             </h1>
-            <span className="mt-4 text-white font-Roboto font-normal lg:text-2xl text-lg">
+            <span className="mt-4 text-white font-[Roboto] font-normal lg:text-2xl text-lg">
               Download our yearly calendar by clicking the below button.
             </span>
 
@@ -33,7 +33,7 @@ const Calendaractivity = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[107px] relative">
+      <div className="font-[Roboto] mt-[107px] relative">
         <div className="lg:flex flex-row-reverse  lg:w-full lg:h-[321px] w-[421px] h-[336px] bg-[#1A2338]">
           {/* Image */}
           <div className="lg:ml-[308px] ml-[20px] lg:mr-[14rem] mr-[60px] relative -top-16">
@@ -49,7 +49,7 @@ const Calendaractivity = () => {
             <h1 className="text-white font-semibold lg:text-4xl lg:mt-[40px] text-lg leading-[24px]">
               Our Monthly Newsletters
             </h1>
-            <span className="mt-4 text-white font-Roboto font-normal lg:text-2xl text-lg">
+            <span className="mt-4 text-white font-[Roboto] font-normal lg:text-2xl text-lg">
               Checkout our monthly newsletters by clicking on the links below
             </span>
 
