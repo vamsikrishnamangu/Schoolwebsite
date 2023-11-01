@@ -5,7 +5,7 @@ import { BiChevronDown } from "react-icons/bi";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-[#1A2338] h-[100vh] font-[Roboto]">
+      <div className="bg-[#1A2338] h-[100vh] font-roboto-sans">
         <div className="flex flex-row">
           <div>
             <img

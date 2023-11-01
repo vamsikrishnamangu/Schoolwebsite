@@ -12,13 +12,13 @@ const Classroom = () => {
   // };
   return (
     <>
-      <div className=" font-[Roboto] mt-20 ml-20">
+      <div className=" font-roboto-sans mt-20 ml-20">
         <h1 className="font-bold lg:text-4xl text-3xl lg:ml-[84px] ">
           Beyond Classroom
         </h1>
       </div>
-      <div className="font-[Roboto] flex justify-center items-start">
-        <div className="font-[Roboto] flex flex-col py-[4px] px-[2px] ml-[106px]">
+      <div className="font-roboto-sans flex justify-center items-start">
+        <div className="font-roboto-sans flex flex-col py-[4px] px-[2px] ml-[106px]">
           <div>
             <img
               className="lg:h-64 lg:w-64 w-[199px] h-[199px] "
@@ -53,7 +53,7 @@ const Classroom = () => {
           </button>
         </div>
         <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
-        <div className=" font-[Roboto] flex flex-col ml-[57px]  py-[12px] px-[2px]">
+        <div className=" font-roboto-sans flex flex-col ml-[57px]  py-[12px] px-[2px]">
           <img
             className="lg:h-64 lg:w-64 w-[199px] h-[199px]  "
             src="/Ellipse 2.png"
@@ -78,7 +78,7 @@ const Classroom = () => {
           </button>
         </div>
         <div className="self-stretch w-0.5 bg-[#1A2338] mx-[24px]"></div>
-        <div className=" font-[Roboto] flex flex-col ml-[57px]">
+        <div className=" font-roboto-sans flex flex-col ml-[57px]">
           <img
             className="lg:h-64 lg:w-64 w-[199px] h-[199px]"
             src="/Ellipse 3.png"

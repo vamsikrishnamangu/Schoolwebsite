@@ -16,14 +16,14 @@ const Campus = () => {
 
   return (
     <>
-      <div className="font-[Roboto]  ml-[84px] mt-[60px]">
+      <div className="font-roboto-sans  ml-[84px] mt-[60px]">
         <h1 className="lg:ml-[106px] lg:mt-[60px] mt-[10px] mb-[10px] text-[#1A2338] font-Roboto font-bold lg:text-4xl text-3xl leading-20">
           Campus Buzz
         </h1>
       </div>
 
       {/* Mobile layout with react-slick carousel */}
-      <div className=" font-[Roboto] lg:ml-[106px] ml-[10px] lg:hidden">
+      <div className=" font-roboto-sans lg:ml-[106px] ml-[10px] lg:hidden">
         <Slider {...settings}>
           {[
             {
@@ -61,7 +61,7 @@ const Campus = () => {
       </div>
 
       {/* The existing layout for desktop screens */}
-      <div className="font-[Roboto] hidden lg:flex 2xl:ml-0 lg:ml-[84px] lg:justify-around flex flex-row gap-14 mt-10">
+      <div className="font-roboto-sans hidden lg:flex 2xl:ml-0 lg:ml-[84px] lg:justify-around flex flex-row gap-14 mt-10">
         {[
           {
             imgSrc: "image4.svg",

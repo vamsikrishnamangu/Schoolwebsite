@@ -11,7 +11,7 @@ const Director = () => {
 
   return (
     <>
-      <div className="font-[Roboto] mt-[20px]  w-full h-[112px] bg-[#2E416D] rounded-[3px] flex justify-around items-center px-6">
+      <div className="font-roboto-sans mt-[20px]  w-full h-[112px] bg-[#2E416D] rounded-[3px] flex justify-around items-center px-6">
         {["Administrative Leadership", "Operating Leadership"].map((title) => (
           <div
             className="flex flex-col items-center space-y-2 cursor-pointer"
@@ -47,24 +47,24 @@ const Director = () => {
 
       {selectedTitle === "Administrative Leadership" && (
         <div>
-          <h1 className="font-[Roboto]  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
+          <h1 className="font-roboto-sans  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
             Director and Trustees
           </h1>
           <div className="mt-2 bg-white custom-shadow py-[64px] px-[84px] shadow-lg rounded-xl ml-[4rem]">
             {/* Left Section */}
-            <div className="font-[Roboto] flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
+            <div className="font-roboto-sans flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
               {/* Image Section */}
               <div className="flex justify-start items-center mb-8">
                 <img src="image7.svg" alt="images" className="mr-8 w-52 h-64" />{" "}
                 <div className="flex flex-col">
-                  <p className="font-[Roboto] font-bold text-lg text-black">
+                  <p className="font-roboto-sans font-bold text-lg text-black">
                     Mr. J Reddy
                   </p>
-                  <p className="font-[Roboto] font-bold text-sm text-[#364C80] mt-2">
+                  <p className="font-roboto-sans font-bold text-sm text-[#364C80] mt-2">
                     Managing Director
                   </p>
                 </div>
-                <p className="font-[Roboto] font-light text-lg text-[#364C80] ml-[5rem]">
+                <p className="font-roboto-sans font-light text-lg text-[#364C80] ml-[5rem]">
                   "Hello and welcome to St. Michael's School, a place where
                   we're deeply committed to nurturing the next generation of
                   learners equipped for the 21st century. Our mission goes
@@ -85,24 +85,24 @@ const Director = () => {
 
       {selectedTitle === "Operating Leadership" && (
         <div>
-          <h1 className="font-[Roboto]  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
+          <h1 className="font-roboto-sans  text-center lg:mt-[2.8rem] text-[#1A2338] font-bold text-3xl">
             Director and Trustees
           </h1>
           <div className="mt-2 bg-white custom-shadow py-[94px] px-[84px] shadow-lg rounded-xl ml-[4rem]">
             {/* Left Section */}
-            <div className="font-[Roboto] flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
+            <div className="font-roboto-sans flex flex-col bg-white custom-shadow py-[40px] px-[60px] shadow-lg rounded-xl w-4/5">
               {/* Image Section */}
               <div className="flex justify-start items-center mb-8">
                 <img src="image8.svg" alt="images" className="mr-8 w-52 h-64" />{" "}
                 <div className="flex flex-col">
-                  <p className="font-[Roboto] font-bold text-lg text-black">
+                  <p className="font-roboto-sans font-bold text-lg text-black">
                     Mrs. Radha Rani
                   </p>
-                  <p className="font-[Roboto] font-bold text-sm text-[#364C80] mt-2">
+                  <p className="font-roboto-sans font-bold text-sm text-[#364C80] mt-2">
                     Principal
                   </p>
                 </div>
-                <p className="font-[Roboto] font-light text-lg text-[#364C80] ml-[5rem]">
+                <p className="font-roboto-sans font-light text-lg text-[#364C80] ml-[5rem]">
                   As the Principal of St. Michael's School, I am proud to
                   embrace the vision of the National Education Policy (NEP) that
                   emphasizes holistic education. Our curriculum is thoughtfully
@@ -119,7 +119,7 @@ const Director = () => {
           </div>
         </div>
       )}
-      <div className="font-[Roboto] flex space-x-64 lg:mb-[6rem] lg:mt-[4rem] ml-[16rem]">
+      <div className="font-roboto-sans flex space-x-64 lg:mb-[6rem] lg:mt-[4rem] ml-[16rem]">
         <div className="flex flex-col">
           <h1 className="font-bold text-xl text-[#000] line-height: 1.5rem">
             Mr. J Reddy

@@ -12,15 +12,15 @@ const Contactform = () => {
   return (
     <div>
       <div className="bg-[#fff] flex flex-col lg:flex-row mt-8 p-6">
-        <div className="font-[Roboto] lg:p-4 lg:mt-20   lg:ml-[5rem] ml-[24px]">
-          <p className="lg:w-[432px] w-[310px] lg:text-[#A3A3A3] text-[#000] font-[Roboto] lg:text-[36px]  text-lg font-extrabold leading-[130%]">
+        <div className="font-roboto-sans lg:p-4 lg:mt-20   lg:ml-[5rem] ml-[24px]">
+          <p className="lg:w-[432px] w-[310px] lg:text-[#A3A3A3] text-[#000] font-roboto-sans lg:text-[36px]  text-lg font-extrabold leading-[130%]">
             Write to us if you have queries/concerns or if you want to give us
             feedback
           </p>
         </div>
 
         <div className="flex-1 p-4 2xl:ml-[28rem]">
-          <div className="font-[Roboto] flex flex-col space-y-4">
+          <div className="font-roboto-sans flex flex-col space-y-4">
             <div className="flex flex-row space-x-2">
               <input
                 type="radio"
@@ -29,7 +29,7 @@ const Contactform = () => {
                 onChange={() => setChildStudiesHere(false)}
               />
               <label
-                className="font-[Roboto] text-xl font-normal"
+                className="font-roboto-sans text-xl font-normal"
                 htmlFor="doesntStudy"
               >
                 My child doesn't study here
@@ -44,7 +44,7 @@ const Contactform = () => {
                 onChange={() => setChildStudiesHere(true)}
               />
               <label
-                className="font-[Roboto] text-xl font-normal"
+                className="font-roboto-sans text-xl font-normal"
                 htmlFor="studiesHere"
               >
                 My child studies here
@@ -52,8 +52,8 @@ const Contactform = () => {
             </div>
           </div>
           <form>
-            <div className="font-[Roboto] mb-4 lg:mt-[64px] mt-[37px]">
-              <label className="font-[Roboto] block text-black font-normal text-xl">
+            <div className="font-roboto-sans mb-4 lg:mt-[64px] mt-[37px]">
+              <label className="font-roboto-sans block text-black font-normal text-xl">
                 Status your requirement <span className="text-red-500">*</span>
                 <select className="mt-2 p-2 w-full border rounded">
                   <option value="option1">Option 1</option>
@@ -62,7 +62,7 @@ const Contactform = () => {
               </label>
             </div>
             <div className={`mb-4 ${!childStudiesHere ? "opacity-50" : ""}`}>
-              <label className="font-[Roboto] block text-black font-normal text-xl">
+              <label className="font-roboto-sans block text-black font-normal text-xl">
                 Select Campus <span className="text-red-500">*</span>
                 <select
                   className="mt-2 p-2 w-full border rounded"
@@ -74,7 +74,7 @@ const Contactform = () => {
               </label>
             </div>
 
-            <div className="font-[Roboto] mb-4">
+            <div className="font-roboto-sans mb-4">
               <label className="block text-black font-normal text-xl">
                 Name<span className="text-red-500">*</span>
                 <input
@@ -85,7 +85,7 @@ const Contactform = () => {
               </label>
             </div>
 
-            <div className="font-[Roboto] mb-4">
+            <div className="font-roboto-sans mb-4">
               <label className="block text-black font-normal text-xl">
                 E Mail
                 <input
@@ -96,7 +96,7 @@ const Contactform = () => {
               </label>
             </div>
 
-            <div className="font-[Roboto] mb-4">
+            <div className="font-roboto-sans mb-4">
               <label className="block text-black font-normal text-xl">
                 Phone
                 <input
@@ -107,7 +107,7 @@ const Contactform = () => {
               </label>
             </div>
 
-            <div className="font-[Roboto] mb-4">
+            <div className="font-roboto-sans mb-4">
               <label className="block text-black font-normal text-xl">
                 Message
                 <input
@@ -133,7 +133,7 @@ const Contactform = () => {
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className="font-[Roboto] items-center font-medium bg-[#fff] text-[#1A2338]"
+                className="font-roboto-sans items-center font-medium bg-[#fff] text-[#1A2338]"
               >
                 Submit
               </button>
@@ -142,10 +142,10 @@ const Contactform = () => {
           {isModalOpen && (
             <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
               <div
-                className="font-[Roboto] bg-white rounded-xl p-5 w-[1187px] h-[500px]"
+                className="font-roboto-sans bg-white rounded-xl p-5 w-[1187px] h-[500px]"
                 style={{ top: "671px", left: "127px", borderRadius: "16px" }}
               >
-                <div className="font-[Roboto] flex flex-col lg:ml-[6rem] lg:mt-[7rem]">
+                <div className="font-roboto-sans flex flex-col lg:ml-[6rem] lg:mt-[7rem]">
                   <h1
                     className="font-bold text-5xl text-center line-height:1.25rem text-black"
                     style={{ lineHeight: "50px" }}
@@ -165,7 +165,7 @@ const Contactform = () => {
                   </p>
                 </div>
                 <button
-                  className="font-[Roboto] mt-[4.8rem] mb-[6rem]  px-[50px] py-[10px] ml-[29rem] rounded-xl bg-[#1A2338] text-white "
+                  className="font-roboto-sans mt-[4.8rem] mb-[6rem]  px-[50px] py-[10px] ml-[29rem] rounded-xl bg-[#1A2338] text-white "
                   onClick={() => setModalOpen(false)}
                 >
                   Click here

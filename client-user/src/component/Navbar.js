@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className="bg-[#1A2338]">
-      <div className=" font-[Roboto] lg:flex-row items-center lg:justify-between">
+      <div className=" font-roboto-sans lg:flex-row items-center lg:justify-between">
         <div className="flex flex-row justify-between items-center ">
           {/* Logo */}
           <div>

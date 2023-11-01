@@ -45,7 +45,7 @@ const ImageUpload = () => {
               className="pt-[70px]  2xl:pl-[50px] lg:pl-[10px]"
             />
 
-            <p className="font-[Roboto] text-sm lg:text-xs text-gray-500   mt-[11px] 2xl:ml-[150px] lg:ml-[50px]">
+            <p className="font-roboto-sans text-sm lg:text-xs text-gray-500   mt-[11px] 2xl:ml-[150px] lg:ml-[50px]">
               "Drag & Drop" or <br /> "Double click to upload image"
             </p>
           </div>
@@ -63,7 +63,7 @@ const ImageUpload = () => {
           accept="image/png, image/jpeg, image/gif, image/svg"
         />
       </div>
-      <div className="font-[Roboto] absolute bottom-[40px] 2xl:ml-[480px] lg:ml-[400px] transform -translate-x-1/2">
+      <div className="font-roboto-sans absolute bottom-[40px] 2xl:ml-[480px] lg:ml-[400px] transform -translate-x-1/2">
         <p className="text-xs text-gray-400">SVG, PNG, JPG or GIF (max. 5MB)</p>
       </div>
       <div className="absolute bottom-[30px] 2xl:ml-[480px] lg:ml-[400px] transform -translate-x-1/2">

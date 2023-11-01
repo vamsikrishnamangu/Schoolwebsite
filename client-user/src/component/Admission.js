@@ -11,7 +11,7 @@ const Admission = () => {
             <div className="lg:ml-[6.5rem] ml-[24px] mt-[26px] lg:mt-[6rem]  lg:h-1/2 lg:w-1/2 w-[330px] h-[320px]">
               <img src="admissionImage1.svg" alt="images" />
             </div>
-            <div className="font-[Roboto]">
+            <div className="font-roboto-sans">
               <h1 className=" lg:mt-[11rem] lg:ml-[4rem] ml-[24px] text-[#1A2338]  lg:text-4xl text-lg font-bold ">
                 START THE ADMISSION PROCESS
               </h1>

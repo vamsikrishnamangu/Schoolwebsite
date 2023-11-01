@@ -5,7 +5,7 @@ import Admission from "./component/Admission/admission";
 import Navbar from "./component/Home/Navbar";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ContactUsPage from "./contact/contact";
+import ContactUsPage from "./component/contact/contact";
 import Home from "./component/Home/Home";
 import Campusbuzz from "./component/CampusBuzz/Campusbuzz";
 function App() {

@@ -16,11 +16,11 @@ const Life = () => {
   return (
     <>
       <div className="ml-[70px] lg:mt-[24px] mt-[30px]">
-        <h1 className="lg:ml-[106px] font-[Roboto] font-bold lg:text-4xl text-2xl ">
+        <h1 className="lg:ml-[106px] font-roboto-sans font-bold lg:text-4xl text-2xl ">
           Life at St. Michael’s
         </h1>
       </div>
-      <div className="font-[Roboto] lg:ml-[4px] ml-[24px] flex flex-col sm:flex-row 2xl:justify-around lg:justify-center lg:gap-[32px]">
+      <div className="font-roboto-sans lg:ml-[4px] ml-[24px] flex flex-col sm:flex-row 2xl:justify-around lg:justify-center lg:gap-[32px]">
         {/* content */}
         <div
           className={`py-6 px-5 ${

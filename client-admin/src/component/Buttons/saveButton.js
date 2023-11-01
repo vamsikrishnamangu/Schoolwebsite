@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 const SaveButton = ({ onSave, onCancel }) => {
   return (
     <>
-      <div className="font-[Roboto] mb-[32px]  2xl:mt-[30px] lg:mt-[13px] flex flex-row space-x-4 ">
+      <div className="font-roboto-sans mb-[32px]  2xl:mt-[30px] lg:mt-[13px] flex flex-row space-x-4 ">
         <Button
           variant="outlined"
           onClick={onCancel}

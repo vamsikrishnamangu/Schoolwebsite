@@ -32,7 +32,7 @@ export default function DraggableDialog() {
   return (
     <div>
       <Button
-        className="font-[Roboto]"
+        className="font-roboto-sans"
         variant="outlined"
         onClick={handleClickOpen}
       >
@@ -45,14 +45,14 @@ export default function DraggableDialog() {
         aria-labelledby="draggable-dialog-title"
       >
         <DialogTitle
-          className="font-[Roboto]"
+          className="font-roboto-sans"
           style={{ cursor: "move" }}
           id="draggable-dialog-title"
         >
           save current changes
         </DialogTitle>
 
-        <DialogActions className="font-[Roboto]">
+        <DialogActions className="font-roboto-sans">
           <Button autoFocus onClick={handleClose}>
             Cancel
           </Button>

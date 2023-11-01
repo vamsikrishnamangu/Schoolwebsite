@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import SaveButton from "../component/Buttons/saveButton";
-import Publish from "../component/Buttons/publishButton";
+import SaveButton from "../../component/Buttons/saveButton";
+import Publish from "../../component/Buttons/publishButton";
 
 const Contact = () => {
   const [email, setEmail] = useState("");

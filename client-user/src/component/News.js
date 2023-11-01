@@ -17,7 +17,7 @@ const NewsAndEvents = () => {
     autoplaySpeed: 5000, // Slide every 5 seconds
   };
   const renderSlide = (imgSrc, altText) => (
-    <div className="bg-[#1A2338] font-[Roboto]">
+    <div className="bg-[#1A2338] font-roboto-sans">
       <div>
         <h1 className="lg:text-4xl text-xl ml-[2rem] 2xl:ml-[16rem] lg:ml-[2rem] lg:mt-[1.5rem] mt-[1rem] text-white font-bold  sm:items-center">
           News and Events

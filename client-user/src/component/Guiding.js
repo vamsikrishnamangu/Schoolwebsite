@@ -58,13 +58,13 @@ const Guiding = () => {
           </p>
         </div>
       </div>
-      <div className="font-[Roboto] bg-[#fff] lg:mt-[3.9rem] lg:ml-[4.8rem] hidden lg:block">
+      <div className="font-roboto-sans bg-[#fff] lg:mt-[3.9rem] lg:ml-[4.8rem] hidden lg:block">
         <h1 className="text-[#1A2338] font-Roboto text-4xl font-bold">
           Life at St. Michael’s
         </h1>
       </div>
       <div className="relative ">
-        <div className=" font-[Roboto] flex flex-col lg:flex-row  justify-between lg:items-center ">
+        <div className=" font-roboto-sans flex flex-col lg:flex-row  justify-between lg:items-center ">
           <div className="flex flex-col lg:ml-[79px] ml-[25px] ">
             <h1 className=" text-[#1A2338] font-Roboto font-bold lg:text-3xl text-xl">
               Guiding Principles
@@ -85,7 +85,7 @@ const Guiding = () => {
             />
           </div>
         </div>
-        <div className="font-[Roboto] flex flex-col lg:flex-row-reverse justify-between items-center">
+        <div className="font-roboto-sans flex flex-col lg:flex-row-reverse justify-between items-center">
           <div className="flex flex-col lg:ml-[79px] ml-[25px] ">
             <h1 className="text-[#1A2338] font-Roboto font-bold lg:text-3xl text-xl">
               Unique Teaching Methodology
@@ -107,7 +107,7 @@ const Guiding = () => {
             />
           </div>
         </div>
-        <div className="font-[Roboto] flex flex-col lg:flex-row  justify-between lg:items-center">
+        <div className="font-roboto-sans flex flex-col lg:flex-row  justify-between lg:items-center">
           <div className="flex flex-col lg:ml-[79px] ml-[25px] ">
             <h1 className="lg:mt-[7rem] mt-[39px] text-[#1A2338] font-Roboto font-bold lg:text-3xl text-xl">
               Inclusive Education

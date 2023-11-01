@@ -12,10 +12,10 @@ const Abouthead = () => {
           />
           <div className="absolute top-0 left-0 p-4 ">
             <div className=" 2xl:w-full 2xl:h-[14rem] 2xl:mt-[42rem] bg-[#1A233880] rounded-2xl 2xl:ml-[6rem]">
-              <p className="font-[Roboto] pt-4 text-white font-bold lg:text-3xl text-sm lg:ml-40 lg:mt-48 mt-[89px] ml-[80px]">
+              <p className="font-roboto-sans pt-4 text-white font-bold lg:text-3xl text-sm lg:ml-40 lg:mt-48 mt-[89px] ml-[80px]">
                 GOVERNANCE & LEADERSHIP
               </p>
-              <p className="font-[Roboto] lg:mt-4 lg:text-6xl text-lg font-Roboto font-extrabold ml-40 text-[#FFA901]">
+              <p className="font-roboto-sans lg:mt-4 lg:text-6xl text-lg font-Roboto font-extrabold ml-40 text-[#FFA901]">
                 About us
               </p>
               <p
